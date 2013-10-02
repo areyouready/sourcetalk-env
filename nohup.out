@@ -1,0 +1,1498 @@
+Running from: /vagrant/jenkins.war
+webroot: $user.home/.jenkins
+Oct 02, 2013 11:53:49 AM winstone.Logger logInternal
+INFO: Beginning extraction from war file
+Jenkins home directory: /home/vagrant/.jenkins found at: $user.home/.jenkins
+Oct 02, 2013 11:53:52 AM winstone.Logger logInternal
+INFO: HTTP Listener started: port=8001
+Oct 02, 2013 11:53:52 AM winstone.Logger logInternal
+INFO: Winstone Servlet Engine v0.9.10 running: controlPort=disabled
+Oct 02, 2013 11:53:52 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Oct 02, 2013 11:53:58 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Oct 02, 2013 11:53:58 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Oct 02, 2013 11:53:58 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Oct 02, 2013 11:53:58 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Oct 02, 2013 11:53:58 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Oct 02, 2013 11:54:01 AM org.jenkinsci.main.modules.sshd.SSHD start
+INFO: Started SSHD at port 36111
+Oct 02, 2013 11:54:02 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Oct 02, 2013 11:54:02 AM hudson.TcpSlaveAgentListener <init>
+INFO: JNLP slave agent listener started on TCP port 54656
+Oct 02, 2013 11:54:02 AM hudson.WebAppMain$3 run
+INFO: Jenkins is fully up and running
+Oct 02, 2013 11:55:51 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8081"]
+Oct 02, 2013 11:55:51 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8019"]
+Oct 02, 2013 11:55:51 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Oct 02, 2013 11:55:51 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.39
+Oct 02, 2013 11:55:51 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /vagrant/artifactory-3.0.3/tomcat/conf/Catalina/localhost/artifactory.xml
+[ARTIFACTORY] [INFO] Starting Artifactory [artifactory.home=/vagrant/artifactory-3.0.3].
+2013-10-02 11:56:15,228 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:184) - 
+               _   _  __           _
+    /\        | | (_)/ _|         | |
+   /  \   _ __| |_ _| |_ __ _  ___| |_ ___  _ __ _   _
+  / /\ \ | '__| __| |  _/ _` |/ __| __/ _ \| '__| | | |
+ / ____ \| |  | |_| | || (_| | (__| || (_) | |  | |_| |
+/_/    \_\_|   \__|_|_| \__,_|\___|\__\___/|_|   \__, |
+ Version:  3.0.3                                  __/ |
+ Revision: 30044                                 |___/
+ Artifactory Home: '/vagrant/artifactory-3.0.3'
+
+Oct 02, 2013 11:56:15 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /vagrant/artifactory-3.0.3/tomcat/webapps/ROOT
+Oct 02, 2013 11:56:15 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8081"]
+Oct 02, 2013 11:56:16 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8019"]
+2013-10-02 11:56:16,553 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:166) - Refreshing Artifactory: startup date [Wed Oct 02 11:56:16 UTC 2013]; root of context hierarchy
+2013-10-02 11:56:30,293 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:168) - Database: Apache Derby 10.9.1.0 - (1344872). Driver: Apache Derby Embedded JDBC Driver 10.9.1.0 - (1344872)
+2013-10-02 11:56:30,294 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:170) - Connection URL: jdbc:derby:/vagrant/artifactory-3.0.3/data/derby
+2013-10-02 11:56:31,431 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:156) - ***Creating database schema***
+2013-10-02 11:56:40,404 [art-init] [INFO ] (o.a.s.ArtifactorySchedulerFactoryBean:648) - Starting Quartz Scheduler now
+2013-10-02 11:56:40,437 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:174) - Artifactory context starting up...
+2013-10-02 11:56:40,439 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.storage.db.DbService
+2013-10-02 11:56:40,480 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.interceptor.StorageAggregationInterceptors
+2013-10-02 11:56:40,482 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.interceptor.StorageInterceptors
+2013-10-02 11:56:40,485 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.config.ConfigurationChangesInterceptors
+2013-10-02 11:56:40,487 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.config.InternalCentralConfigService
+2013-10-02 11:56:40,569 [art-init] [INFO ] (o.a.c.CentralConfigServiceImpl:126) - Loading bootstrap configuration (artifactory home dir is /vagrant/artifactory-3.0.3).
+2013-10-02 11:56:43,047 [art-init] [INFO ] (o.a.c.CentralConfigServiceImpl:274) - Saving new configuration in storage...
+2013-10-02 11:56:43,251 [art-init] [INFO ] (o.a.c.CentralConfigServiceImpl:277) - New configuration saved.
+2013-10-02 11:56:43,255 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.schedule.TaskService
+2013-10-02 11:56:43,270 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.service.InternalRepositoryService
+2013-10-02 11:56:43,955 [art-init] [INFO ] (o.a.i.InfoWriter    :85) - 
+
+ SYSTEM INFORMATION DUMP
+ =======================
+
+ User Info
+ ========================
+   user.country                                                          | US
+   user.dir                                                              | /vagrant
+   user.home                                                             | /home/vagrant
+   user.language                                                         | en
+   user.name                                                             | vagrant
+   user.timezone                                                         | Etc/UTC
+
+ Host Info
+ ========================
+   Available Processors                                                  | 2
+   Heap Memory Usage-Commited                                            | 536870912
+   Heap Memory Usage-Init                                                | 536870912
+   Heap Memory Usage-Max                                                 | 2147483648
+   Heap Memory Usage-Used                                                | 135022424
+   Non-Heap Memory Usage-Commited                                        | 138543104
+   Non-Heap Memory Usage-Init                                            | 136773632
+   Non-Heap Memory Usage-Max                                             | 184549376
+   Non-Heap Memory Usage-Used                                            | 49975520
+   os.arch                                                               | amd64
+   os.name                                                               | Linux
+   os.version                                                            | 3.8.0-31-generic
+
+ Artifactory Info
+ ========================
+   artifactory.runMode.test                                              | false
+   artifactory.runMode.qa                                                | false
+   artifactory.runMode.dev                                               | false
+   artifactory.version                                                   | 3.0.3
+   artifactory.revision                                                  | 30044
+   artifactory.servlet.supportUrlSessionTracking                         | false
+   artifactory.addons.disabled                                           | 
+   artifactory.addons.info.url                                           | http
+                                                                         | //service.jfrog.org/artifactory/addons/info/%s
+   artifactory.async.corePoolSize                                        | 8
+   artifactory.async.poolTtlSecs                                         | 60
+   artifactory.async.poolMaxQueueSize                                    | 10000
+   artifactory.versioningQueryIntervalSecs                               | 7200
+   artifactory.logs.viewRefreshRateSecs                                  | 10
+   artifactory.locks.timeoutSecs                                         | 120
+   artifactory.locks.debugTimeouts                                       | false
+   artifactory.task.completionLockTimeoutRetries                         | 100
+   artifactory.repo.concurrentDownloadSyncTimeoutSecs                    | 900
+   artifactory.repo.downloadStatsEnabled                                 | true
+   artifactory.fsitem.cache.idleTimeSecs                                 | 1200
+   artifactory.search.maxResults                                         | 500
+   artifactory.search.userQueryLimit                                     | 1000
+   artifactory.search.content.maxFragments                               | 500
+   artifactory.search.content.maxFragmentsSize                           | 5000
+   artifactory.search.archive.minQueryLength                             | 3
+   artifactory.search.pattern.timeoutSecs                                | 30
+   artifactory.gc.useIndex                                               | false
+   artifactory.gc.intervalSecs                                           | 86400
+   artifactory.gc.delaySecs                                              | 7200
+   artifactory.gc.sleepBetweenNodesMillis                                | 20
+   artifactory.gc.scanStartSleepingThresholdMillis                       | 20000
+   artifactory.gc.scanSleepBetweenIterationsMillis                       | 200
+   artifactory.gc.fileScanSleepIterationMillis                           | 1000
+   artifactory.gc.fileScanSleepMillis                                    | 250
+   artifactory.gc.maxCacheEntries                                        | 10000
+   artifactory.traffic.collectionActive                                  | false
+   artifactory.security.authentication.cache.idleTimeSecs                | 300
+   artifactory.security.userLastAccessUpdatesResolutionSecs              | 5
+   artifactory.security.authentication.encryptedPassword.surroundChars   | **
+   artifactory.mvn.central.hostPattern                                   | .maven.org
+   artifactory.mvn.central.indexerMaxQueryIntervalSecs                   | 86400
+   artifactory.mvn.dynamicMetadata.cacheRetentionSecs                    | 10
+   artifactory.mvn.metadata.version3.enabled                             | true
+   artifactory.mvn.custom.types                                          | tar.gz
+   artifactory.request.disableVersionTokens                              | false
+   artifactory.request.searchLatestReleaseByDateCreated                  | false
+   artifactory.build.maxFoldersToScanForDeletionWarnings                 | 2
+   artifactory.build.checksum.cache.idleTimeSecs                         | 300
+   artifactory.updates.refreshIntervalSecs                               | 14400
+   artifactory.updates.url                                               | http
+                                                                         | //service.jfrog.org/artifactory/updates
+   artifactory.artifactoryRequestsToGlobalCanRetrieveRemoteArtifacts     | false
+   artifactory.ui.syntaxColoringMaxTextSizeBytes                         | 512000
+   artifactory.plugin.scripts.refreshIntervalSecs                        | 0
+   artifactory.file.roller.maxFileToRetain                               | 10
+   artifactory.backup.fileExportSleepIterationMillis                     | 2000
+   artifactory.backup.fileExportSleepMillis                              | 250
+   artifactory.http.acceptEncoding.gzip                                  | true
+   artifactory.http.useExpectContinue                                    | false
+   artifactory.filtering.resourceSizeKb                                  | 64
+   artifactory.repo.remote.checkForExistingResourceOnRequest             | true
+   artifactory.version.query.enabled                                     | true
+   artifactory.response.disableContentDispositionFilename                | false
+   artifactory.yum.calculationRequest.aggregationTimeWindowSecs          | 60
+   artifactory.yum.calculationRequest.aggregationCycleSecs               | 60
+   artifactory.archive.licenseFile.names                                 | license,LICENSE,license.txt,LICENSE.txt,LICENSE.TXT
+   artifactory.ui.search.maxRowsPerPage                                  | 20
+   artifactory.replication.checksumDeploy.minSizeKb                      | 10
+   artifactory.replication.consumer.queueSize                            | 1
+   artifactory.replication.local.iteration.sleepThresholdMillis          | 1000
+   artifactory.replication.local.iteration.sleepMillis                   | 100
+   artifactory.replication.event.queue.size                              | 50000
+   artifactory.request.explodedArchiveExtensions                         | zip,tar,tar.gz,tgz
+   artifactory.bintray.jcenter.url                                       | http
+                                                                         | //jcenter.bintray.com
+   artifactory.bintray.url                                               | https
+                                                                         | //bintray.com
+   artifactory.bintray.api.url                                           | https
+                                                                         | //api.bintray.com
+   artifactory.bintray.ui.hideUploads                                    | false
+   artifactory.bintray.ui.hideInfo                                       | false
+   artifactory.bintray.ui.hideRemoteSearch                               | false
+   artifactory.useUserNameAutoCompleteOnLogin                            | on
+   artifactory.ui.hideEncryptedPassword                                  | *****
+   artifactory.stats.flushIntervalSecs                                   | 30
+   artifactory.integrationCleanup.intervalSecs                           | 300
+   artifactory.integrationCleanup.quietPeriodSecs                        | 60
+   artifactory.folderPruning.intervalSecs                                | 300
+   artifactory.folderPruning.quietPeriodSecs                             | 60
+   artifactory.security.authentication.password.salt                     | ****************
+   artifactory.db.idGenerator.fetch.amount                               | 1000
+   artifactory.gems.localIndexTaskIntervalSecs                           | 30
+   artifactory.gems.virtualIndexTaskIntervalSecs                         | 300
+   artifactory.gems.gemsIndexTaskQueueLimit                              | 20000
+   artifactory.gems.gemsAfterRepoInitHack                                | true
+   derby.storage.pageCacheSize                                           | 500
+   artifactory.home                                                      | /vagrant/artifactory-3.0.3
+   derby.module.mgmt.jmx                                                 | org.apache.derby.impl.services.jmxnone.NoManagementService
+   derby.language.logStatementText                                       | false
+   derby.stream.error.logSeverityLevel                                   | 0
+   artifactory.release                                                   | 1376218388685
+
+ Java System Info
+ ========================
+   java.class.version                                                    | 51.0
+   java.home                                                             | /usr/lib/jvm/java-7-openjdk-amd64/jre
+   java.io.tmpdir                                                        | /vagrant/artifactory-3.0.3/tomcat/temp
+   java.runtime.name                                                     | OpenJDK Runtime Environment
+   java.runtime.version                                                  | 1.7.0_25-b30
+   java.specification.name                                               | Java Platform API Specification
+   java.specification.vendor                                             | Oracle Corporation
+   java.specification.version                                            | 1.7
+   java.vendor                                                           | Oracle Corporation
+   java.vendor.url                                                       | http
+                                                                         | //java.oracle.com/
+   java.vendor.url.bug                                                   | http
+                                                                         | //bugreport.sun.com/bugreport/
+   java.version                                                          | 1.7.0_25
+   java.vm.info                                                          | mixed mode
+   java.vm.name                                                          | OpenJDK 64-Bit Server VM
+   java.vm.specification.name                                            | Java Virtual Machine Specification
+   java.vm.specification.vendor                                          | Oracle Corporation
+   java.vm.specification.version                                         | 1.7
+   java.vm.vendor                                                        | Oracle Corporation
+   java.vm.version                                                       | 23.7-b01
+   sun.arch.data.model                                                   | 64
+   sun.boot.library.path                                                 | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64
+   sun.cpu.endian                                                        | little
+   sun.cpu.isalist                                                       | 
+   sun.io.unicode.encoding                                               | UnicodeLittle
+   sun.java.launcher                                                     | SUN_STANDARD
+   sun.jnu.encoding                                                      | ANSI_X3.4-1968
+   sun.management.compiler                                               | HotSpot 64-Bit Tiered Compilers
+   sun.os.patch.level                                                    | unknown
+   JVM Input arguments                                                   | -Djava.util.logging.config.file=/vagrant/artifactory-3.0.3/tomcat/conf/logging.properties
+                                                                         | -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+                                                                         | -Xms512m
+                                                                         | -Xmx2g
+                                                                         | -Xss256k
+                                                                         | -XX
+                                                                         | PermSize=128m
+                                                                         | -XX
+                                                                         | MaxPermSize=128m
+                                                                         | -XX
+                                                                         | +UseG1GC
+                                                                         | -Dartifactory.home=/vagrant/artifactory-3.0.3
+                                                                         | -Dfile.encoding=UTF8
+                                                                         | -Djava.endorsed.dirs=/vagrant/artifactory-3.0.3/tomcat/endorsed
+                                                                         | -Dcatalina.base=/vagrant/artifactory-3.0.3/tomcat
+                                                                         | -Dcatalina.home=/vagrant/artifactory-3.0.3/tomcat
+                                                                         | -Djava.io.tmpdir=/vagrant/artifactory-3.0.3/tomcat/temp
+
+ Java Class Path Info
+ ========================
+   sun.boot.class.path                                                   | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/netx.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/plugin.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/classes
+   java.library.path                                                     | /usr/java/packages/lib/amd64
+                                                                         | /usr/lib/jni
+                                                                         | /lib
+                                                                         | /usr/lib
+   java.endorsed.dirs                                                    | /vagrant/artifactory-3.0.3/tomcat/endorsed
+   java.ext.dirs                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext
+                                                                         | /usr/java/packages/lib/ext
+   java.class.path                                                       | /vagrant/artifactory-3.0.3/tomcat/bin/bootstrap.jar
+                                                                         | /vagrant/artifactory-3.0.3/tomcat/bin/tomcat-juli.jar
+
+2013-10-02 11:56:44,133 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.backup.InternalBackupService
+2013-10-02 11:56:44,186 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.security.ldap.InternalLdapAuthenticator
+2013-10-02 11:56:44,189 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.md.MetadataDefinitionService
+2013-10-02 11:56:44,355 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.engine.InternalDownloadService
+2013-10-02 11:56:44,357 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.search.InternalSearchService
+2013-10-02 11:56:44,358 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.build.InternalBuildService
+2013-10-02 11:56:44,360 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.index.InternalMavenIndexerService
+2013-10-02 11:56:44,366 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cache.expirable.CacheExpiry
+2013-10-02 11:56:44,368 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cleanup.InternalIntegrationCleanupService
+2013-10-02 11:56:44,370 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.storage.InternalStorageService
+2013-10-02 11:56:44,381 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.security.interceptor.SecurityConfigurationChangesInterceptors
+2013-10-02 11:56:44,383 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cleanup.InternalFolderPruningService
+2013-10-02 11:56:44,387 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.interceptor.ImportInterceptors
+2013-10-02 11:56:44,388 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cleanup.InternalArtifactCleanupService
+2013-10-02 11:56:44,401 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.traffic.InternalTrafficService
+2013-10-02 11:56:44,408 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.security.InternalSecurityService
+2013-10-02 11:56:45,260 [art-init] [INFO ] (o.a.s.SecurityServiceImpl:1157) - Creating the default super user 'admin', since no admin user exists!
+2013-10-02 11:56:45,356 [art-init] [INFO ] (o.a.s.SecurityServiceImpl:1186) - Creating the default anonymous user, since it does not exists!
+2013-10-02 11:56:45,823 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:339) - Artifactory application context is ready.
+2013-10-02 11:56:45,914 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:220) - 
+###########################################################
+### Artifactory successfully started (30.646 seconds)   ###
+###########################################################
+
+Oct 02, 2013 11:57:09 AM hudson.model.DownloadService$Downloadable doPostBack
+INFO: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+Oct 02, 2013 11:57:10 AM hudson.model.DownloadService$Downloadable doPostBack
+INFO: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+Oct 02, 2013 11:57:11 AM hudson.model.DownloadService$Downloadable doPostBack
+INFO: Obtained the updated data file for hudson.tools.JDKInstaller
+Oct 02, 2013 11:57:12 AM hudson.model.UpdateSite updateData
+INFO: Obtained the latest update center data file for UpdateSource default
+2013-10-02 12:00:00,329 [art-exec-12] [INFO ] (o.a.s.b.GarbageCollectorInfo:76) - Storage garbage collector report:
+Number of binaries:      0
+Total execution time:    296 millis
+Candidates for deletion: 0
+Checksums deleted:       0
+Binaries deleted:        0
+Total size freed:        0 bytes
+Current total size:      0 bytes
+Oct 02, 2013 12:06:18 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Started Workspace clean-up
+Oct 02, 2013 12:06:18 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Finished Workspace clean-up. 1 ms
+Oct 02, 2013 12:32:07 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Adding dependent install of git-client for plugin git
+Oct 02, 2013 12:32:07 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Adding dependent install of ssh-credentials for plugin git-client
+Oct 02, 2013 12:32:07 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Adding dependent install of credentials for plugin ssh-credentials
+Oct 02, 2013 12:32:07 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Adding dependent install of ssh-agent for plugin git-client
+Oct 02, 2013 12:32:07 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Dependent install of ssh-credentials for plugin ssh-agent already added, skipping
+Oct 02, 2013 12:32:07 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Dependent install of credentials for plugin ssh-agent already added, skipping
+Oct 02, 2013 12:32:07 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Adding dependent install of token-macro for plugin config-file-provider
+Oct 02, 2013 12:32:13 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of Credentials Plugin on behalf of anonymous
+Oct 02, 2013 12:32:14 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading Credentials Plugin
+Oct 02, 2013 12:32:14 PM hudson.PluginManager dynamicLoad
+INFO: Attempting to dynamic load /home/vagrant/.jenkins/plugins/credentials.jpi
+Oct 02, 2013 12:32:15 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of SSH Credentials Plugin on behalf of anonymous
+Oct 02, 2013 12:32:15 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading SSH Credentials Plugin
+Oct 02, 2013 12:32:16 PM hudson.PluginManager dynamicLoad
+INFO: Attempting to dynamic load /home/vagrant/.jenkins/plugins/ssh-credentials.jpi
+Oct 02, 2013 12:32:16 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of SSH Agent Plugin on behalf of anonymous
+Oct 02, 2013 12:32:16 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading SSH Agent Plugin
+Oct 02, 2013 12:32:19 PM hudson.PluginManager dynamicLoad
+INFO: Attempting to dynamic load /home/vagrant/.jenkins/plugins/ssh-agent.jpi
+Oct 02, 2013 12:32:20 PM hudson.ExtensionFinder$GuiceFinder$SezpozModule configure
+WARNING: Failed to load com.cloudbees.jenkins.plugins.sshagent.SSHAgentBuildWrapper$DescriptorImpl
+java.lang.NoClassDefFoundError: com/cloudbees/plugins/credentials/common/AbstractIdCredentialsListBoxModel
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2521)
+	at java.lang.Class.privateGetPublicMethods(Class.java:2641)
+	at java.lang.Class.getMethods(Class.java:1457)
+	at hudson.ExtensionFinder$GuiceFinder$SezpozModule.resolve(ExtensionFinder.java:484)
+	at hudson.ExtensionFinder$GuiceFinder$SezpozModule.configure(ExtensionFinder.java:511)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:62)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:230)
+	at com.google.inject.spi.Elements.getElements(Elements.java:103)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:136)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:104)
+	at com.google.inject.internal.InjectorImpl.createChildInjector(InjectorImpl.java:230)
+	at hudson.ExtensionFinder$GuiceFinder.refresh(ExtensionFinder.java:336)
+	at jenkins.model.Jenkins.refreshExtensions(Jenkins.java:2138)
+	at hudson.PluginManager.dynamicLoad(PluginManager.java:431)
+	at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:1313)
+	at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1116)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:104)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.ClassNotFoundException: com.cloudbees.plugins.credentials.common.AbstractIdCredentialsListBoxModel
+	at hudson.ClassicPluginStrategy$DependencyClassLoader.findClass(ClassicPluginStrategy.java:584)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.tools.ant.AntClassLoader.findBaseClass(AntClassLoader.java:1387)
+	at org.apache.tools.ant.AntClassLoader.loadClass(AntClassLoader.java:1080)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 22 more
+
+Oct 02, 2013 12:32:20 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Oct 02, 2013 12:32:20 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Oct 02, 2013 12:32:20 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Oct 02, 2013 12:32:20 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Oct 02, 2013 12:32:20 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Oct 02, 2013 12:32:20 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Oct 02, 2013 12:32:20 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Oct 02, 2013 12:32:20 PM hudson.PluginManager dynamicLoad
+INFO: Plugin ssh-agent dynamically installed
+Oct 02, 2013 12:32:20 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Installation successful: SSH Agent Plugin
+Oct 02, 2013 12:32:20 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of Git Client Plugin on behalf of anonymous
+Oct 02, 2013 12:32:20 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading Git Client Plugin
+Oct 02, 2013 12:32:21 PM hudson.PluginManager dynamicLoad
+INFO: Attempting to dynamic load /home/vagrant/.jenkins/plugins/git-client.jpi
+Oct 02, 2013 12:32:22 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Oct 02, 2013 12:32:22 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Oct 02, 2013 12:32:22 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Oct 02, 2013 12:32:22 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Oct 02, 2013 12:32:22 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Oct 02, 2013 12:32:22 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Oct 02, 2013 12:32:22 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Oct 02, 2013 12:32:22 PM hudson.PluginManager dynamicLoad
+INFO: Plugin git-client dynamically installed
+Oct 02, 2013 12:32:22 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Installation successful: Git Client Plugin
+Oct 02, 2013 12:32:22 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of Git Plugin on behalf of anonymous
+Oct 02, 2013 12:32:23 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading Git Plugin
+Oct 02, 2013 12:32:25 PM hudson.PluginManager dynamicLoad
+INFO: Attempting to dynamic load /home/vagrant/.jenkins/plugins/git.jpi
+Oct 02, 2013 12:32:27 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Oct 02, 2013 12:32:27 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Oct 02, 2013 12:32:27 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Oct 02, 2013 12:32:27 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Oct 02, 2013 12:32:27 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Oct 02, 2013 12:32:27 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Oct 02, 2013 12:32:27 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Oct 02, 2013 12:32:27 PM hudson.PluginManager dynamicLoad
+INFO: Plugin git dynamically installed
+Oct 02, 2013 12:32:27 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Installation successful: Git Plugin
+Oct 02, 2013 12:32:27 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of Workspace Cleanup Plugin on behalf of anonymous
+Oct 02, 2013 12:32:27 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading Workspace Cleanup Plugin
+Oct 02, 2013 12:32:27 PM hudson.PluginManager dynamicLoad
+INFO: Attempting to dynamic load /home/vagrant/.jenkins/plugins/ws-cleanup.jpi
+Oct 02, 2013 12:32:28 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Oct 02, 2013 12:32:28 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Oct 02, 2013 12:32:28 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Oct 02, 2013 12:32:28 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Oct 02, 2013 12:32:28 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Oct 02, 2013 12:32:28 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Oct 02, 2013 12:32:28 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Oct 02, 2013 12:32:28 PM hudson.PluginManager dynamicLoad
+INFO: Plugin ws-cleanup dynamically installed
+Oct 02, 2013 12:32:28 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Installation successful: Workspace Cleanup Plugin
+Oct 02, 2013 12:32:28 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of Token Macro Plugin on behalf of anonymous
+Oct 02, 2013 12:32:29 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading Token Macro Plugin
+Oct 02, 2013 12:32:29 PM hudson.PluginManager dynamicLoad
+INFO: Attempting to dynamic load /home/vagrant/.jenkins/plugins/token-macro.jpi
+Oct 02, 2013 12:32:29 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Oct 02, 2013 12:32:29 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Oct 02, 2013 12:32:29 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Oct 02, 2013 12:32:29 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Oct 02, 2013 12:32:29 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Oct 02, 2013 12:32:29 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Oct 02, 2013 12:32:29 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Oct 02, 2013 12:32:29 PM hudson.PluginManager dynamicLoad
+INFO: Plugin token-macro dynamically installed
+Oct 02, 2013 12:32:29 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Installation successful: Token Macro Plugin
+Oct 02, 2013 12:32:29 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of Config File Provider Plugin on behalf of anonymous
+Oct 02, 2013 12:32:30 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading Config File Provider Plugin
+Oct 02, 2013 12:32:30 PM hudson.PluginManager dynamicLoad
+INFO: Attempting to dynamic load /home/vagrant/.jenkins/plugins/config-file-provider.jpi
+Oct 02, 2013 12:32:31 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Oct 02, 2013 12:32:31 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Oct 02, 2013 12:32:31 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Oct 02, 2013 12:32:31 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Oct 02, 2013 12:32:31 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Oct 02, 2013 12:32:31 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Oct 02, 2013 12:32:31 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Oct 02, 2013 12:32:31 PM hudson.PluginManager dynamicLoad
+INFO: Plugin config-file-provider dynamically installed
+Oct 02, 2013 12:32:31 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Installation successful: Config File Provider Plugin
+Oct 02, 2013 12:32:53 PM hudson.model.UpdateCenter doSafeRestart
+INFO: Scheduling Jenkins reboot
+Oct 02, 2013 12:32:53 PM jenkins.model.Jenkins$24 run
+INFO: Restart in 10 seconds
+Oct 02, 2013 12:33:03 PM jenkins.model.Jenkins$24 run
+SEVERE: Restarting VM as requested by anonymous
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping mailer
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping pam-auth
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping external-monitor-job
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping ldap
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping javadoc
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping maven-plugin
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping subversion
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping ant
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping credentials
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping ssh-credentials
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping ssh-slaves
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping translation
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping cvs
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping ssh-agent
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping git-client
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping git
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping ws-cleanup
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping token-macro
+Oct 02, 2013 12:33:03 PM hudson.PluginWrapper stop
+INFO: Stopping config-file-provider
+Running from: /vagrant/jenkins.war
+webroot: $user.home/.jenkins
+Oct 02, 2013 12:33:04 PM winstone.Logger logInternal
+INFO: Beginning extraction from war file
+Jenkins home directory: /home/vagrant/.jenkins found at: $user.home/.jenkins
+Oct 02, 2013 12:33:05 PM winstone.Logger logInternal
+INFO: HTTP Listener started: port=8001
+Oct 02, 2013 12:33:05 PM winstone.Logger logInternal
+INFO: Winstone Servlet Engine v0.9.10 running: controlPort=disabled
+Oct 02, 2013 12:33:05 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Oct 02, 2013 12:33:05 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Oct 02, 2013 12:33:06 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Oct 02, 2013 12:33:06 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Oct 02, 2013 12:33:10 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Oct 02, 2013 12:33:10 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Oct 02, 2013 12:33:11 PM org.jenkinsci.main.modules.sshd.SSHD start
+INFO: Started SSHD at port 47230
+Oct 02, 2013 12:33:11 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Oct 02, 2013 12:33:11 PM hudson.TcpSlaveAgentListener <init>
+INFO: JNLP slave agent listener started on TCP port 33480
+Oct 02, 2013 12:33:11 PM hudson.WebAppMain$3 run
+INFO: Jenkins is fully up and running
+Oct 02, 2013 12:42:28 PM hudson.model.Run execute
+INFO: sourcetalk-1 #1 main build action completed: SUCCESS
+Oct 02, 2013 12:42:48 PM hudson.model.Run execute
+INFO: sourcetalk-1 #2 main build action completed: SUCCESS
+Oct 02, 2013 12:43:44 PM hudson.model.Run execute
+INFO: sourcetalk-1 #3 main build action completed: SUCCESS
+Oct 02, 2013 12:44:43 PM hudson.model.Run execute
+INFO: sourcetalk-1 #4 main build action completed: SUCCESS
+Oct 02, 2013 12:45:43 PM hudson.model.Run execute
+INFO: sourcetalk-1 #5 main build action completed: SUCCESS
+Oct 02, 2013 12:46:43 PM hudson.model.Run execute
+INFO: sourcetalk-1 #6 main build action completed: SUCCESS
+Oct 02, 2013 12:47:44 PM hudson.model.Run execute
+INFO: sourcetalk-1 #7 main build action completed: SUCCESS
+Oct 02, 2013 12:48:43 PM hudson.model.Run execute
+INFO: sourcetalk-1 #8 main build action completed: SUCCESS
+Oct 02, 2013 12:49:28 PM hudson.model.Run execute
+INFO: sourcetalk-1 #9 main build action completed: FAILURE
+Oct 02, 2013 12:49:42 PM hudson.model.Run execute
+INFO: sourcetalk-1 #10 main build action completed: FAILURE
+Oct 02, 2013 12:51:30 PM hudson.triggers.SCMTrigger$Runner run
+INFO: SCM changes detected in sourcetalk-1. Triggering  #11
+Oct 02, 2013 12:51:49 PM hudson.model.Run execute
+INFO: sourcetalk-1 #11 main build action completed: FAILURE
+Oct 02, 2013 12:52:36 PM hudson.model.Run execute
+INFO: sourcetalk-1 #12 main build action completed: FAILURE
+Oct 02, 2013 12:54:06 PM hudson.model.Run execute
+INFO: sourcetalk-1 #13 main build action completed: FAILURE
+Oct 02, 2013 12:54:53 PM hudson.model.Run execute
+INFO: sourcetalk-1 #14 main build action completed: FAILURE
+Oct 02, 2013 12:56:58 PM hudson.model.Run execute
+INFO: sourcetalk-1 #15 main build action completed: SUCCESS
+Oct 02, 2013 1:00:30 PM hudson.triggers.SCMTrigger$Runner run
+INFO: SCM changes detected in sourcetalk-1. Triggering  #16
+Oct 02, 2013 1:01:03 PM hudson.model.Run execute
+INFO: sourcetalk-1 #16 main build action completed: SUCCESS
+Oct 02, 2013 1:10:30 PM hudson.triggers.SCMTrigger$Runner run
+INFO: SCM changes detected in sourcetalk-1. Triggering  #17
+Oct 02, 2013 1:11:26 PM hudson.model.Run execute
+INFO: sourcetalk-1 #17 main build action completed: FAILURE
+Oct 02, 2013 1:13:14 PM winstone.Logger logInternal
+SEVERE: Error while serving http://localhost:18001/job/sourcetalk-1/configSubmit
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor382.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.kohsuke.stapler.Function$InstanceFunction.invoke(Function.java:297)
+	at org.kohsuke.stapler.Function.bindAndInvoke(Function.java:160)
+	at org.kohsuke.stapler.Function.bindAndInvokeAndServeResponse(Function.java:95)
+	at org.kohsuke.stapler.MetaClass$1.doDispatch(MetaClass.java:111)
+	at org.kohsuke.stapler.NameBasedDispatcher.dispatch(NameBasedDispatcher.java:53)
+	at org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:685)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:799)
+	at org.kohsuke.stapler.MetaClass$6.doDispatch(MetaClass.java:239)
+	at org.kohsuke.stapler.NameBasedDispatcher.dispatch(NameBasedDispatcher.java:53)
+	at org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:685)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:799)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:587)
+	at org.kohsuke.stapler.Stapler.service(Stapler.java:218)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:45)
+	at winstone.ServletConfiguration.execute(ServletConfiguration.java:248)
+	at winstone.RequestDispatcher.forward(RequestDispatcher.java:333)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:376)
+	at hudson.util.PluginServletFilter$1.doFilter(PluginServletFilter.java:96)
+	at hudson.util.PluginServletFilter.doFilter(PluginServletFilter.java:88)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at hudson.security.csrf.CrumbFilter.doFilter(CrumbFilter.java:48)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:84)
+	at hudson.security.ChainedServletFilter.doFilter(ChainedServletFilter.java:76)
+	at hudson.security.HudsonFilter.doFilter(HudsonFilter.java:164)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at org.kohsuke.stapler.compression.CompressionFilter.doFilter(CompressionFilter.java:46)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at hudson.util.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:81)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at winstone.RequestDispatcher.forward(RequestDispatcher.java:331)
+	at winstone.RequestHandlerThread.processRequest(RequestHandlerThread.java:227)
+	at winstone.RequestHandlerThread.run(RequestHandlerThread.java:150)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at winstone.BoundedExecutorService$1.run(BoundedExecutorService.java:77)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.RuntimeException: Failed to instantiate class hudson.plugins.git.GitSCM from {"value":"2","userRemoteConfigs":{"url":"https://github.com/areyouready/sourcetalk-2","name":"","refspec":""},"branches":{"name":"**"},"includedRegions":"","excludedRegions":"","excludedUsers":"","localBranch":"","relativeTargetDir":"","reference":"","scmName":"","gitConfigName":"","gitConfigEmail":"","pruneBranches":false,"skipTag":false,"clean":false,"remotePoll":false,"disableSubmodules":false,"recursiveSubmodules":false,"authorOrCommitter":false,"wipeOutWorkspace":false,"ignoreNotifyCommit":false,"useShallowClone":false,"":["hudson.plugins.git.util.DefaultBuildChooser","auto"],"buildChooser":{"stapler-class":"hudson.scm.browsers.WebSVN"},"gitTool":"Default"}
+	at hudson.model.Descriptor.newInstance(Descriptor.java:576)
+	at hudson.plugins.git.GitSCM$DescriptorImpl.newInstance(GitSCM.java:1498)
+	at hudson.plugins.git.GitSCM$DescriptorImpl.newInstance(GitSCM.java:1419)
+	at hudson.scm.SCMS.parseSCM(SCMS.java:63)
+	at hudson.model.AbstractProject.submit(AbstractProject.java:2002)
+	at hudson.maven.MavenModuleSet.submit(MavenModuleSet.java:1137)
+	at hudson.model.Job.doConfigSubmit(Job.java:1136)
+	at hudson.model.AbstractProject.doConfigSubmit(AbstractProject.java:787)
+	... 48 more
+Caused by: java.lang.IllegalArgumentException: Failed to instantiate class hudson.plugins.git.GitSCM from {"value":"2","userRemoteConfigs":{"url":"https://github.com/areyouready/sourcetalk-2","name":"","refspec":""},"branches":{"name":"**"},"includedRegions":"","excludedRegions":"","excludedUsers":"","localBranch":"","relativeTargetDir":"","reference":"","scmName":"","gitConfigName":"","gitConfigEmail":"","pruneBranches":false,"skipTag":false,"clean":false,"remotePoll":false,"disableSubmodules":false,"recursiveSubmodules":false,"authorOrCommitter":false,"wipeOutWorkspace":false,"ignoreNotifyCommit":false,"useShallowClone":false,"":["hudson.plugins.git.util.DefaultBuildChooser","auto"],"buildChooser":{"stapler-class":"hudson.scm.browsers.WebSVN"},"gitTool":"Default"}
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:597)
+	at org.kohsuke.stapler.RequestImpl.bindJSON(RequestImpl.java:392)
+	at org.kohsuke.stapler.RequestImpl.bindJSON(RequestImpl.java:388)
+	at hudson.model.Descriptor.newInstance(Descriptor.java:567)
+	... 55 more
+Caused by: java.lang.IllegalArgumentException: Failed to convert the buildChooser parameter of the constructor public hudson.plugins.git.GitSCM(java.lang.String,java.util.List,java.util.List,hudson.plugins.git.UserMergeOptions,java.lang.Boolean,java.util.Collection,boolean,boolean,hudson.plugins.git.util.BuildChooser,hudson.plugins.git.browser.GitRepositoryBrowser,java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,boolean,java.lang.String,java.lang.String,boolean,java.lang.String,boolean,boolean)
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:591)
+	... 58 more
+Caused by: java.lang.IllegalArgumentException: Failed to instantiate class hudson.plugins.git.util.BuildChooser from {"stapler-class":"hudson.scm.browsers.WebSVN"}
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:597)
+	at org.kohsuke.stapler.RequestImpl.bindJSON(RequestImpl.java:392)
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:589)
+	... 58 more
+Caused by: java.lang.IllegalArgumentException: Specified type class hudson.scm.browsers.WebSVN is not assignable to the expected class hudson.plugins.git.util.BuildChooser
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:567)
+	... 60 more
+
+Oct 02, 2013 1:13:18 PM winstone.Logger logInternal
+SEVERE: Error while serving http://localhost:18001/job/sourcetalk-1/configSubmit
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor382.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.kohsuke.stapler.Function$InstanceFunction.invoke(Function.java:297)
+	at org.kohsuke.stapler.Function.bindAndInvoke(Function.java:160)
+	at org.kohsuke.stapler.Function.bindAndInvokeAndServeResponse(Function.java:95)
+	at org.kohsuke.stapler.MetaClass$1.doDispatch(MetaClass.java:111)
+	at org.kohsuke.stapler.NameBasedDispatcher.dispatch(NameBasedDispatcher.java:53)
+	at org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:685)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:799)
+	at org.kohsuke.stapler.MetaClass$6.doDispatch(MetaClass.java:239)
+	at org.kohsuke.stapler.NameBasedDispatcher.dispatch(NameBasedDispatcher.java:53)
+	at org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:685)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:799)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:587)
+	at org.kohsuke.stapler.Stapler.service(Stapler.java:218)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:45)
+	at winstone.ServletConfiguration.execute(ServletConfiguration.java:248)
+	at winstone.RequestDispatcher.forward(RequestDispatcher.java:333)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:376)
+	at hudson.util.PluginServletFilter$1.doFilter(PluginServletFilter.java:96)
+	at hudson.util.PluginServletFilter.doFilter(PluginServletFilter.java:88)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at hudson.security.csrf.CrumbFilter.doFilter(CrumbFilter.java:48)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:84)
+	at hudson.security.ChainedServletFilter.doFilter(ChainedServletFilter.java:76)
+	at hudson.security.HudsonFilter.doFilter(HudsonFilter.java:164)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at org.kohsuke.stapler.compression.CompressionFilter.doFilter(CompressionFilter.java:46)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at hudson.util.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:81)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at winstone.RequestDispatcher.forward(RequestDispatcher.java:331)
+	at winstone.RequestHandlerThread.processRequest(RequestHandlerThread.java:227)
+	at winstone.RequestHandlerThread.run(RequestHandlerThread.java:150)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at winstone.BoundedExecutorService$1.run(BoundedExecutorService.java:77)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.RuntimeException: Failed to instantiate class hudson.plugins.git.GitSCM from {"value":"2","userRemoteConfigs":{"url":"https://github.com/areyouready/sourcetalk-2","name":"","refspec":""},"branches":{"name":"**"},"includedRegions":"","excludedRegions":"","excludedUsers":"","localBranch":"","relativeTargetDir":"","reference":"","scmName":"","gitConfigName":"","gitConfigEmail":"","pruneBranches":false,"skipTag":false,"clean":false,"remotePoll":false,"disableSubmodules":false,"recursiveSubmodules":false,"authorOrCommitter":false,"wipeOutWorkspace":false,"ignoreNotifyCommit":false,"useShallowClone":false,"":["hudson.plugins.git.util.DefaultBuildChooser","auto"],"buildChooser":{"stapler-class":"hudson.scm.browsers.WebSVN"},"gitTool":"Default"}
+	at hudson.model.Descriptor.newInstance(Descriptor.java:576)
+	at hudson.plugins.git.GitSCM$DescriptorImpl.newInstance(GitSCM.java:1498)
+	at hudson.plugins.git.GitSCM$DescriptorImpl.newInstance(GitSCM.java:1419)
+	at hudson.scm.SCMS.parseSCM(SCMS.java:63)
+	at hudson.model.AbstractProject.submit(AbstractProject.java:2002)
+	at hudson.maven.MavenModuleSet.submit(MavenModuleSet.java:1137)
+	at hudson.model.Job.doConfigSubmit(Job.java:1136)
+	at hudson.model.AbstractProject.doConfigSubmit(AbstractProject.java:787)
+	... 48 more
+Caused by: java.lang.IllegalArgumentException: Failed to instantiate class hudson.plugins.git.GitSCM from {"value":"2","userRemoteConfigs":{"url":"https://github.com/areyouready/sourcetalk-2","name":"","refspec":""},"branches":{"name":"**"},"includedRegions":"","excludedRegions":"","excludedUsers":"","localBranch":"","relativeTargetDir":"","reference":"","scmName":"","gitConfigName":"","gitConfigEmail":"","pruneBranches":false,"skipTag":false,"clean":false,"remotePoll":false,"disableSubmodules":false,"recursiveSubmodules":false,"authorOrCommitter":false,"wipeOutWorkspace":false,"ignoreNotifyCommit":false,"useShallowClone":false,"":["hudson.plugins.git.util.DefaultBuildChooser","auto"],"buildChooser":{"stapler-class":"hudson.scm.browsers.WebSVN"},"gitTool":"Default"}
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:597)
+	at org.kohsuke.stapler.RequestImpl.bindJSON(RequestImpl.java:392)
+	at org.kohsuke.stapler.RequestImpl.bindJSON(RequestImpl.java:388)
+	at hudson.model.Descriptor.newInstance(Descriptor.java:567)
+	... 55 more
+Caused by: java.lang.IllegalArgumentException: Failed to convert the buildChooser parameter of the constructor public hudson.plugins.git.GitSCM(java.lang.String,java.util.List,java.util.List,hudson.plugins.git.UserMergeOptions,java.lang.Boolean,java.util.Collection,boolean,boolean,hudson.plugins.git.util.BuildChooser,hudson.plugins.git.browser.GitRepositoryBrowser,java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,boolean,java.lang.String,java.lang.String,boolean,java.lang.String,boolean,boolean)
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:591)
+	... 58 more
+Caused by: java.lang.IllegalArgumentException: Failed to instantiate class hudson.plugins.git.util.BuildChooser from {"stapler-class":"hudson.scm.browsers.WebSVN"}
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:597)
+	at org.kohsuke.stapler.RequestImpl.bindJSON(RequestImpl.java:392)
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:589)
+	... 58 more
+Caused by: java.lang.IllegalArgumentException: Specified type class hudson.scm.browsers.WebSVN is not assignable to the expected class hudson.plugins.git.util.BuildChooser
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:567)
+	... 60 more
+
+Oct 02, 2013 1:13:55 PM winstone.Logger logInternal
+SEVERE: Error while serving http://localhost:18001/job/sourcetalk-1/configSubmit
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor382.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.kohsuke.stapler.Function$InstanceFunction.invoke(Function.java:297)
+	at org.kohsuke.stapler.Function.bindAndInvoke(Function.java:160)
+	at org.kohsuke.stapler.Function.bindAndInvokeAndServeResponse(Function.java:95)
+	at org.kohsuke.stapler.MetaClass$1.doDispatch(MetaClass.java:111)
+	at org.kohsuke.stapler.NameBasedDispatcher.dispatch(NameBasedDispatcher.java:53)
+	at org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:685)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:799)
+	at org.kohsuke.stapler.MetaClass$6.doDispatch(MetaClass.java:239)
+	at org.kohsuke.stapler.NameBasedDispatcher.dispatch(NameBasedDispatcher.java:53)
+	at org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:685)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:799)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:587)
+	at org.kohsuke.stapler.Stapler.service(Stapler.java:218)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:45)
+	at winstone.ServletConfiguration.execute(ServletConfiguration.java:248)
+	at winstone.RequestDispatcher.forward(RequestDispatcher.java:333)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:376)
+	at hudson.util.PluginServletFilter$1.doFilter(PluginServletFilter.java:96)
+	at hudson.util.PluginServletFilter.doFilter(PluginServletFilter.java:88)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at hudson.security.csrf.CrumbFilter.doFilter(CrumbFilter.java:48)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:84)
+	at hudson.security.ChainedServletFilter.doFilter(ChainedServletFilter.java:76)
+	at hudson.security.HudsonFilter.doFilter(HudsonFilter.java:164)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at org.kohsuke.stapler.compression.CompressionFilter.doFilter(CompressionFilter.java:46)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at hudson.util.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:81)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at winstone.RequestDispatcher.forward(RequestDispatcher.java:331)
+	at winstone.RequestHandlerThread.processRequest(RequestHandlerThread.java:227)
+	at winstone.RequestHandlerThread.run(RequestHandlerThread.java:150)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at winstone.BoundedExecutorService$1.run(BoundedExecutorService.java:77)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.RuntimeException: Failed to instantiate class hudson.plugins.git.GitSCM from {"value":"2","userRemoteConfigs":{"url":"https://github.com/areyouready/sourcetalk-2","name":"","refspec":""},"branches":{"name":"**"},"includedRegions":"","excludedRegions":"","excludedUsers":"","localBranch":"","relativeTargetDir":"","reference":"","scmName":"","gitConfigName":"","gitConfigEmail":"","pruneBranches":false,"skipTag":false,"clean":false,"remotePoll":false,"disableSubmodules":false,"recursiveSubmodules":false,"authorOrCommitter":false,"wipeOutWorkspace":false,"ignoreNotifyCommit":false,"useShallowClone":false,"":["hudson.plugins.git.util.DefaultBuildChooser","auto"],"buildChooser":{"stapler-class":"hudson.scm.browsers.WebSVN"},"gitTool":"Default"}
+	at hudson.model.Descriptor.newInstance(Descriptor.java:576)
+	at hudson.plugins.git.GitSCM$DescriptorImpl.newInstance(GitSCM.java:1498)
+	at hudson.plugins.git.GitSCM$DescriptorImpl.newInstance(GitSCM.java:1419)
+	at hudson.scm.SCMS.parseSCM(SCMS.java:63)
+	at hudson.model.AbstractProject.submit(AbstractProject.java:2002)
+	at hudson.maven.MavenModuleSet.submit(MavenModuleSet.java:1137)
+	at hudson.model.Job.doConfigSubmit(Job.java:1136)
+	at hudson.model.AbstractProject.doConfigSubmit(AbstractProject.java:787)
+	... 48 more
+Caused by: java.lang.IllegalArgumentException: Failed to instantiate class hudson.plugins.git.GitSCM from {"value":"2","userRemoteConfigs":{"url":"https://github.com/areyouready/sourcetalk-2","name":"","refspec":""},"branches":{"name":"**"},"includedRegions":"","excludedRegions":"","excludedUsers":"","localBranch":"","relativeTargetDir":"","reference":"","scmName":"","gitConfigName":"","gitConfigEmail":"","pruneBranches":false,"skipTag":false,"clean":false,"remotePoll":false,"disableSubmodules":false,"recursiveSubmodules":false,"authorOrCommitter":false,"wipeOutWorkspace":false,"ignoreNotifyCommit":false,"useShallowClone":false,"":["hudson.plugins.git.util.DefaultBuildChooser","auto"],"buildChooser":{"stapler-class":"hudson.scm.browsers.WebSVN"},"gitTool":"Default"}
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:597)
+	at org.kohsuke.stapler.RequestImpl.bindJSON(RequestImpl.java:392)
+	at org.kohsuke.stapler.RequestImpl.bindJSON(RequestImpl.java:388)
+	at hudson.model.Descriptor.newInstance(Descriptor.java:567)
+	... 55 more
+Caused by: java.lang.IllegalArgumentException: Failed to convert the buildChooser parameter of the constructor public hudson.plugins.git.GitSCM(java.lang.String,java.util.List,java.util.List,hudson.plugins.git.UserMergeOptions,java.lang.Boolean,java.util.Collection,boolean,boolean,hudson.plugins.git.util.BuildChooser,hudson.plugins.git.browser.GitRepositoryBrowser,java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,boolean,java.lang.String,java.lang.String,boolean,java.lang.String,boolean,boolean)
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:591)
+	... 58 more
+Caused by: java.lang.IllegalArgumentException: Failed to instantiate class hudson.plugins.git.util.BuildChooser from {"stapler-class":"hudson.scm.browsers.WebSVN"}
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:597)
+	at org.kohsuke.stapler.RequestImpl.bindJSON(RequestImpl.java:392)
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:589)
+	... 58 more
+Caused by: java.lang.IllegalArgumentException: Specified type class hudson.scm.browsers.WebSVN is not assignable to the expected class hudson.plugins.git.util.BuildChooser
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:567)
+	... 60 more
+
+Oct 02, 2013 1:14:15 PM winstone.Logger logInternal
+SEVERE: Error while serving http://localhost:18001/job/sourcetalk-1/configSubmit
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor382.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.kohsuke.stapler.Function$InstanceFunction.invoke(Function.java:297)
+	at org.kohsuke.stapler.Function.bindAndInvoke(Function.java:160)
+	at org.kohsuke.stapler.Function.bindAndInvokeAndServeResponse(Function.java:95)
+	at org.kohsuke.stapler.MetaClass$1.doDispatch(MetaClass.java:111)
+	at org.kohsuke.stapler.NameBasedDispatcher.dispatch(NameBasedDispatcher.java:53)
+	at org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:685)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:799)
+	at org.kohsuke.stapler.MetaClass$6.doDispatch(MetaClass.java:239)
+	at org.kohsuke.stapler.NameBasedDispatcher.dispatch(NameBasedDispatcher.java:53)
+	at org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:685)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:799)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:587)
+	at org.kohsuke.stapler.Stapler.service(Stapler.java:218)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:45)
+	at winstone.ServletConfiguration.execute(ServletConfiguration.java:248)
+	at winstone.RequestDispatcher.forward(RequestDispatcher.java:333)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:376)
+	at hudson.util.PluginServletFilter$1.doFilter(PluginServletFilter.java:96)
+	at hudson.util.PluginServletFilter.doFilter(PluginServletFilter.java:88)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at hudson.security.csrf.CrumbFilter.doFilter(CrumbFilter.java:48)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:84)
+	at hudson.security.ChainedServletFilter.doFilter(ChainedServletFilter.java:76)
+	at hudson.security.HudsonFilter.doFilter(HudsonFilter.java:164)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at org.kohsuke.stapler.compression.CompressionFilter.doFilter(CompressionFilter.java:46)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at hudson.util.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:81)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at winstone.RequestDispatcher.forward(RequestDispatcher.java:331)
+	at winstone.RequestHandlerThread.processRequest(RequestHandlerThread.java:227)
+	at winstone.RequestHandlerThread.run(RequestHandlerThread.java:150)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at winstone.BoundedExecutorService$1.run(BoundedExecutorService.java:77)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.RuntimeException: Failed to instantiate class hudson.plugins.git.GitSCM from {"value":"2","userRemoteConfigs":{"url":"https://github.com/areyouready/sourcetalk-2","name":"","refspec":""},"branches":{"name":"**"},"includedRegions":"","excludedRegions":"","excludedUsers":"","localBranch":"","relativeTargetDir":"","reference":"","scmName":"","gitConfigName":"","gitConfigEmail":"","pruneBranches":false,"skipTag":false,"clean":false,"remotePoll":false,"disableSubmodules":false,"recursiveSubmodules":false,"authorOrCommitter":false,"wipeOutWorkspace":false,"ignoreNotifyCommit":false,"useShallowClone":false,"":["hudson.plugins.git.util.DefaultBuildChooser","auto"],"buildChooser":{"stapler-class":"hudson.scm.browsers.WebSVN"},"gitTool":"Default"}
+	at hudson.model.Descriptor.newInstance(Descriptor.java:576)
+	at hudson.plugins.git.GitSCM$DescriptorImpl.newInstance(GitSCM.java:1498)
+	at hudson.plugins.git.GitSCM$DescriptorImpl.newInstance(GitSCM.java:1419)
+	at hudson.scm.SCMS.parseSCM(SCMS.java:63)
+	at hudson.model.AbstractProject.submit(AbstractProject.java:2002)
+	at hudson.maven.MavenModuleSet.submit(MavenModuleSet.java:1137)
+	at hudson.model.Job.doConfigSubmit(Job.java:1136)
+	at hudson.model.AbstractProject.doConfigSubmit(AbstractProject.java:787)
+	... 48 more
+Caused by: java.lang.IllegalArgumentException: Failed to instantiate class hudson.plugins.git.GitSCM from {"value":"2","userRemoteConfigs":{"url":"https://github.com/areyouready/sourcetalk-2","name":"","refspec":""},"branches":{"name":"**"},"includedRegions":"","excludedRegions":"","excludedUsers":"","localBranch":"","relativeTargetDir":"","reference":"","scmName":"","gitConfigName":"","gitConfigEmail":"","pruneBranches":false,"skipTag":false,"clean":false,"remotePoll":false,"disableSubmodules":false,"recursiveSubmodules":false,"authorOrCommitter":false,"wipeOutWorkspace":false,"ignoreNotifyCommit":false,"useShallowClone":false,"":["hudson.plugins.git.util.DefaultBuildChooser","auto"],"buildChooser":{"stapler-class":"hudson.scm.browsers.WebSVN"},"gitTool":"Default"}
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:597)
+	at org.kohsuke.stapler.RequestImpl.bindJSON(RequestImpl.java:392)
+	at org.kohsuke.stapler.RequestImpl.bindJSON(RequestImpl.java:388)
+	at hudson.model.Descriptor.newInstance(Descriptor.java:567)
+	... 55 more
+Caused by: java.lang.IllegalArgumentException: Failed to convert the buildChooser parameter of the constructor public hudson.plugins.git.GitSCM(java.lang.String,java.util.List,java.util.List,hudson.plugins.git.UserMergeOptions,java.lang.Boolean,java.util.Collection,boolean,boolean,hudson.plugins.git.util.BuildChooser,hudson.plugins.git.browser.GitRepositoryBrowser,java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,boolean,java.lang.String,java.lang.String,boolean,java.lang.String,boolean,boolean)
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:591)
+	... 58 more
+Caused by: java.lang.IllegalArgumentException: Failed to instantiate class hudson.plugins.git.util.BuildChooser from {"stapler-class":"hudson.scm.browsers.WebSVN"}
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:597)
+	at org.kohsuke.stapler.RequestImpl.bindJSON(RequestImpl.java:392)
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:589)
+	... 58 more
+Caused by: java.lang.IllegalArgumentException: Specified type class hudson.scm.browsers.WebSVN is not assignable to the expected class hudson.plugins.git.util.BuildChooser
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:567)
+	... 60 more
+
+Oct 02, 2013 1:15:08 PM winstone.Logger logInternal
+SEVERE: Error while serving http://localhost:18001/job/sourcetalk-1/configSubmit
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor382.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.kohsuke.stapler.Function$InstanceFunction.invoke(Function.java:297)
+	at org.kohsuke.stapler.Function.bindAndInvoke(Function.java:160)
+	at org.kohsuke.stapler.Function.bindAndInvokeAndServeResponse(Function.java:95)
+	at org.kohsuke.stapler.MetaClass$1.doDispatch(MetaClass.java:111)
+	at org.kohsuke.stapler.NameBasedDispatcher.dispatch(NameBasedDispatcher.java:53)
+	at org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:685)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:799)
+	at org.kohsuke.stapler.MetaClass$6.doDispatch(MetaClass.java:239)
+	at org.kohsuke.stapler.NameBasedDispatcher.dispatch(NameBasedDispatcher.java:53)
+	at org.kohsuke.stapler.Stapler.tryInvoke(Stapler.java:685)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:799)
+	at org.kohsuke.stapler.Stapler.invoke(Stapler.java:587)
+	at org.kohsuke.stapler.Stapler.service(Stapler.java:218)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:45)
+	at winstone.ServletConfiguration.execute(ServletConfiguration.java:248)
+	at winstone.RequestDispatcher.forward(RequestDispatcher.java:333)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:376)
+	at hudson.util.PluginServletFilter$1.doFilter(PluginServletFilter.java:96)
+	at hudson.util.PluginServletFilter.doFilter(PluginServletFilter.java:88)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at hudson.security.csrf.CrumbFilter.doFilter(CrumbFilter.java:48)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at hudson.security.ChainedServletFilter$1.doFilter(ChainedServletFilter.java:84)
+	at hudson.security.ChainedServletFilter.doFilter(ChainedServletFilter.java:76)
+	at hudson.security.HudsonFilter.doFilter(HudsonFilter.java:164)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at org.kohsuke.stapler.compression.CompressionFilter.doFilter(CompressionFilter.java:46)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at hudson.util.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:81)
+	at winstone.FilterConfiguration.execute(FilterConfiguration.java:194)
+	at winstone.RequestDispatcher.doFilter(RequestDispatcher.java:366)
+	at winstone.RequestDispatcher.forward(RequestDispatcher.java:331)
+	at winstone.RequestHandlerThread.processRequest(RequestHandlerThread.java:227)
+	at winstone.RequestHandlerThread.run(RequestHandlerThread.java:150)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at winstone.BoundedExecutorService$1.run(BoundedExecutorService.java:77)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.lang.RuntimeException: Failed to instantiate class hudson.plugins.git.GitSCM from {"value":"2","userRemoteConfigs":{"url":"https://github.com/areyouready/sourcetalk-2","name":"","refspec":""},"branches":{"name":"**"},"includedRegions":"","excludedRegions":"","excludedUsers":"","localBranch":"","relativeTargetDir":"","reference":"","scmName":"","gitConfigName":"","gitConfigEmail":"","pruneBranches":false,"skipTag":false,"clean":false,"remotePoll":false,"disableSubmodules":false,"recursiveSubmodules":false,"authorOrCommitter":false,"wipeOutWorkspace":false,"ignoreNotifyCommit":false,"useShallowClone":false,"":["hudson.plugins.git.util.DefaultBuildChooser","auto"],"buildChooser":{"stapler-class":"hudson.scm.browsers.WebSVN"},"gitTool":"Default"}
+	at hudson.model.Descriptor.newInstance(Descriptor.java:576)
+	at hudson.plugins.git.GitSCM$DescriptorImpl.newInstance(GitSCM.java:1498)
+	at hudson.plugins.git.GitSCM$DescriptorImpl.newInstance(GitSCM.java:1419)
+	at hudson.scm.SCMS.parseSCM(SCMS.java:63)
+	at hudson.model.AbstractProject.submit(AbstractProject.java:2002)
+	at hudson.maven.MavenModuleSet.submit(MavenModuleSet.java:1137)
+	at hudson.model.Job.doConfigSubmit(Job.java:1136)
+	at hudson.model.AbstractProject.doConfigSubmit(AbstractProject.java:787)
+	... 48 more
+Caused by: java.lang.IllegalArgumentException: Failed to instantiate class hudson.plugins.git.GitSCM from {"value":"2","userRemoteConfigs":{"url":"https://github.com/areyouready/sourcetalk-2","name":"","refspec":""},"branches":{"name":"**"},"includedRegions":"","excludedRegions":"","excludedUsers":"","localBranch":"","relativeTargetDir":"","reference":"","scmName":"","gitConfigName":"","gitConfigEmail":"","pruneBranches":false,"skipTag":false,"clean":false,"remotePoll":false,"disableSubmodules":false,"recursiveSubmodules":false,"authorOrCommitter":false,"wipeOutWorkspace":false,"ignoreNotifyCommit":false,"useShallowClone":false,"":["hudson.plugins.git.util.DefaultBuildChooser","auto"],"buildChooser":{"stapler-class":"hudson.scm.browsers.WebSVN"},"gitTool":"Default"}
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:597)
+	at org.kohsuke.stapler.RequestImpl.bindJSON(RequestImpl.java:392)
+	at org.kohsuke.stapler.RequestImpl.bindJSON(RequestImpl.java:388)
+	at hudson.model.Descriptor.newInstance(Descriptor.java:567)
+	... 55 more
+Caused by: java.lang.IllegalArgumentException: Failed to convert the buildChooser parameter of the constructor public hudson.plugins.git.GitSCM(java.lang.String,java.util.List,java.util.List,hudson.plugins.git.UserMergeOptions,java.lang.Boolean,java.util.Collection,boolean,boolean,hudson.plugins.git.util.BuildChooser,hudson.plugins.git.browser.GitRepositoryBrowser,java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,boolean,boolean,java.lang.String,java.lang.String,boolean,java.lang.String,boolean,boolean)
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:591)
+	... 58 more
+Caused by: java.lang.IllegalArgumentException: Failed to instantiate class hudson.plugins.git.util.BuildChooser from {"stapler-class":"hudson.scm.browsers.WebSVN"}
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:597)
+	at org.kohsuke.stapler.RequestImpl.bindJSON(RequestImpl.java:392)
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:589)
+	... 58 more
+Caused by: java.lang.IllegalArgumentException: Specified type class hudson.scm.browsers.WebSVN is not assignable to the expected class hudson.plugins.git.util.BuildChooser
+	at org.kohsuke.stapler.RequestImpl$TypePair.convertJSON(RequestImpl.java:567)
+	... 60 more
+
+Oct 02, 2013 1:16:32 PM hudson.model.Run execute
+INFO: sourcetalk-1 #18 main build action completed: FAILURE
+Oct 02, 2013 1:22:51 PM hudson.model.Run execute
+INFO: sourcetalk-1 #19 main build action completed: FAILURE
+Oct 02, 2013 1:27:07 PM hudson.model.Run execute
+INFO: sourcetalk-1 #20 main build action completed: FAILURE
+2013-10-02 13:32:51,730 [http-bio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/21/continuous-delivery-training-21.jar' Content-Length: 1375503
+2013-10-02 13:32:52,353 [http-bio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/21/continuous-delivery-training-21.jar.sha1' Content-Length: 40
+2013-10-02 13:32:52,370 [art-exec-240] [INFO ] (o.a.s.a.ArchiveIndexerImpl:128) - Indexing archive: libs-release-local:sourcetalk-tage/continuous-delivery-training/21/continuous-delivery-training-21.jar
+2013-10-02 13:32:52,394 [http-bio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/21/continuous-delivery-training-21.jar.md5' Content-Length: 32
+2013-10-02 13:32:52,406 [http-bio-8081-exec-5] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/21/continuous-delivery-training-21.pom' Content-Length: 6070
+2013-10-02 13:32:52,684 [http-bio-8081-exec-9] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/21/continuous-delivery-training-21.pom.sha1' Content-Length: 40
+2013-10-02 13:32:52,697 [http-bio-8081-exec-8] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/21/continuous-delivery-training-21.pom.md5' Content-Length: 32
+2013-10-02 13:32:52,798 [http-bio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml' Content-Length: 317
+2013-10-02 13:32:52,836 [http-bio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.sha1' Content-Length: 40
+2013-10-02 13:32:52,844 [http-bio-8081-exec-15] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.md5' Content-Length: 32
+Oct 02, 2013 1:33:24 PM hudson.model.Run execute
+INFO: sourcetalk-1 #21 main build action completed: SUCCESS
+2013-10-02 13:49:19,813 [http-bio-8081-exec-9] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/22/continuous-delivery-training-22.jar' Content-Length: 1375502
+2013-10-02 13:49:19,934 [art-exec-282] [INFO ] (o.a.s.a.ArchiveIndexerImpl:128) - Indexing archive: libs-release-local:sourcetalk-tage/continuous-delivery-training/22/continuous-delivery-training-22.jar
+2013-10-02 13:49:19,982 [http-bio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/22/continuous-delivery-training-22.jar.sha1' Content-Length: 40
+2013-10-02 13:49:19,997 [http-bio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/22/continuous-delivery-training-22.jar.md5' Content-Length: 32
+2013-10-02 13:49:20,008 [http-bio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/22/continuous-delivery-training-22.pom' Content-Length: 6070
+2013-10-02 13:49:20,045 [http-bio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/22/continuous-delivery-training-22.pom.sha1' Content-Length: 40
+2013-10-02 13:49:20,056 [http-bio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/22/continuous-delivery-training-22.pom.md5' Content-Length: 32
+2013-10-02 13:49:20,682 [http-bio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml' Content-Length: 369
+2013-10-02 13:49:20,759 [http-bio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.sha1' Content-Length: 40
+2013-10-02 13:49:20,765 [http-bio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.md5' Content-Length: 32
+Oct 02, 2013 1:49:29 PM hudson.model.Run execute
+INFO: sourcetalk-1 #22 main build action completed: FAILURE
+2013-10-02 13:50:51,654 [http-bio-8081-exec-9] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/23/continuous-delivery-training-23.jar' Content-Length: 1375505
+2013-10-02 13:50:51,736 [art-exec-288] [INFO ] (o.a.s.a.ArchiveIndexerImpl:128) - Indexing archive: libs-release-local:sourcetalk-tage/continuous-delivery-training/23/continuous-delivery-training-23.jar
+2013-10-02 13:50:51,789 [http-bio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/23/continuous-delivery-training-23.jar.sha1' Content-Length: 40
+2013-10-02 13:50:51,797 [http-bio-8081-exec-5] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/23/continuous-delivery-training-23.jar.md5' Content-Length: 32
+2013-10-02 13:50:51,807 [http-bio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/23/continuous-delivery-training-23.pom' Content-Length: 6070
+2013-10-02 13:50:51,853 [http-bio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/23/continuous-delivery-training-23.pom.sha1' Content-Length: 40
+2013-10-02 13:50:51,867 [http-bio-8081-exec-15] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/23/continuous-delivery-training-23.pom.md5' Content-Length: 32
+2013-10-02 13:50:52,036 [http-bio-8081-exec-8] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml' Content-Length: 397
+2013-10-02 13:50:52,069 [http-bio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.sha1' Content-Length: 40
+2013-10-02 13:50:52,076 [http-bio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.md5' Content-Length: 32
+Oct 02, 2013 1:51:01 PM hudson.model.Run execute
+INFO: sourcetalk-1 #23 main build action completed: FAILURE
+2013-10-02 13:52:55,643 [http-bio-8081-exec-5] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/24/continuous-delivery-training-24.jar' Content-Length: 1375503
+2013-10-02 13:52:55,730 [art-exec-297] [INFO ] (o.a.s.a.ArchiveIndexerImpl:128) - Indexing archive: libs-release-local:sourcetalk-tage/continuous-delivery-training/24/continuous-delivery-training-24.jar
+2013-10-02 13:52:55,842 [http-bio-8081-exec-8] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/24/continuous-delivery-training-24.jar.sha1' Content-Length: 40
+2013-10-02 13:52:55,856 [http-bio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/24/continuous-delivery-training-24.jar.md5' Content-Length: 32
+2013-10-02 13:52:55,867 [http-bio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/24/continuous-delivery-training-24.pom' Content-Length: 6070
+2013-10-02 13:52:55,903 [http-bio-8081-exec-15] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/24/continuous-delivery-training-24.pom.sha1' Content-Length: 40
+2013-10-02 13:52:55,915 [http-bio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/24/continuous-delivery-training-24.pom.md5' Content-Length: 32
+2013-10-02 13:52:56,020 [http-bio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml' Content-Length: 425
+2013-10-02 13:52:56,065 [http-bio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.sha1' Content-Length: 40
+2013-10-02 13:52:56,073 [http-bio-8081-exec-15] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.md5' Content-Length: 32
+Oct 02, 2013 1:53:05 PM hudson.model.Run execute
+INFO: sourcetalk-1 #24 main build action completed: FAILURE
+Oct 02, 2013 1:56:07 PM winstone.Logger logInternal
+INFO: JVM is terminating. Shutting down Winstone
+Oct 02, 2013 1:56:07 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8081"]
+Oct 02, 2013 1:56:07 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8019"]
+Oct 02, 2013 1:56:07 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+2013-10-02 13:56:08,255 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.security.InternalSecurityService
+2013-10-02 13:56:08,257 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.traffic.InternalTrafficService
+2013-10-02 13:56:08,258 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.cleanup.InternalArtifactCleanupService
+2013-10-02 13:56:08,258 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:41) - Removing all job Artifact Cleanup from task service handler.
+2013-10-02 13:56:08,270 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.interceptor.ImportInterceptors
+2013-10-02 13:56:08,271 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.cleanup.InternalFolderPruningService
+2013-10-02 13:56:08,272 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.security.interceptor.SecurityConfigurationChangesInterceptors
+2013-10-02 13:56:08,272 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.storage.InternalStorageService
+2013-10-02 13:56:08,273 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:41) - Removing all job Garbage Collector from task service handler.
+2013-10-02 13:56:08,278 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.cleanup.InternalIntegrationCleanupService
+2013-10-02 13:56:08,279 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.cache.expirable.CacheExpiry
+2013-10-02 13:56:08,279 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.index.InternalMavenIndexerService
+2013-10-02 13:56:08,280 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:41) - Removing all job Indexer from task service handler.
+2013-10-02 13:56:08,284 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.build.InternalBuildService
+2013-10-02 13:56:08,285 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.search.InternalSearchService
+2013-10-02 13:56:08,285 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.engine.InternalDownloadService
+2013-10-02 13:56:08,286 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.md.MetadataDefinitionService
+2013-10-02 13:56:08,287 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.security.ldap.InternalLdapAuthenticator
+2013-10-02 13:56:08,288 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.backup.InternalBackupService
+2013-10-02 13:56:08,289 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:41) - Removing all job Backup from task service handler.
+2013-10-02 13:56:08,294 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.service.InternalRepositoryService
+2013-10-02 13:56:08,299 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.schedule.TaskService
+2013-10-02 13:56:08,304 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.config.InternalCentralConfigService
+2013-10-02 13:56:08,305 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.config.ConfigurationChangesInterceptors
+2013-10-02 13:56:08,306 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.interceptor.StorageInterceptors
+2013-10-02 13:56:08,307 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.interceptor.StorageAggregationInterceptors
+2013-10-02 13:56:08,308 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.storage.db.DbService
+2013-10-02 13:56:08,310 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:296) - Closing Artifactory: startup date [Wed Oct 02 11:56:16 UTC 2013]; root of context hierarchy
+2013-10-02 13:56:08,331 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactorySchedulerFactoryBean:758) - Shutting down Quartz Scheduler
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/artifactory] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver40] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.InheritableThreadLocal] (value [java.lang.InheritableThreadLocal@6f7491f8]) and a value of type [org.artifactory.common.ArtifactoryHome] (value [org.artifactory.common.ArtifactoryHome@4e1b69f2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.InheritableThreadLocal] (value [java.lang.InheritableThreadLocal@69c8b6ed]) and a value of type [org.artifactory.spring.ArtifactoryApplicationContext] (value [Artifactory: startup date [Wed Oct 02 11:56:16 UTC 2013]; root of context hierarchy]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@7b13f4ea]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@610e43b0]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@7b13f4ea]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2b5e5979]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@7b13f4ea]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@610e43b0]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@7b13f4ea]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2b5e5979]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@7b13f4ea]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@7b13f4ea]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@74b40f23]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.InheritableThreadLocal] (value [java.lang.InheritableThreadLocal@6f7491f8]) and a value of type [org.artifactory.common.ArtifactoryHome] (value [org.artifactory.common.ArtifactoryHome@4e1b69f2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.InheritableThreadLocal] (value [java.lang.InheritableThreadLocal@69c8b6ed]) and a value of type [org.artifactory.spring.ArtifactoryApplicationContext] (value [Artifactory: startup date [Wed Oct 02 11:56:16 UTC 2013]; root of context hierarchy]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8081"]
+Oct 02, 2013 1:56:08 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8019"]
+Oct 02, 2013 1:56:08 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8081"]
+Oct 02, 2013 1:56:08 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8019"]
+Running from: /vagrant/jenkins.war
+webroot: $user.home/.jenkins
+Oct 02, 2013 1:59:51 PM winstone.Logger logInternal
+INFO: Beginning extraction from war file
+Jenkins home directory: /home/vagrant/.jenkins found at: $user.home/.jenkins
+Oct 02, 2013 1:59:52 PM winstone.Logger logInternal
+INFO: HTTP Listener started: port=8001
+Oct 02, 2013 1:59:52 PM winstone.Logger logInternal
+INFO: Winstone Servlet Engine v0.9.10 running: controlPort=disabled
+Oct 02, 2013 1:59:53 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Oct 02, 2013 1:59:53 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Oct 02, 2013 1:59:53 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Oct 02, 2013 1:59:53 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Oct 02, 2013 1:59:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Oct 02, 2013 1:59:59 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Oct 02, 2013 1:59:59 PM org.jenkinsci.main.modules.sshd.SSHD start
+INFO: Started SSHD at port 52006
+Oct 02, 2013 1:59:59 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Oct 02, 2013 1:59:59 PM hudson.TcpSlaveAgentListener <init>
+INFO: JNLP slave agent listener started on TCP port 36214
+Oct 02, 2013 1:59:59 PM hudson.WebAppMain$3 run
+INFO: Jenkins is fully up and running
+Oct 02, 2013 2:00:00 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8081"]
+Oct 02, 2013 2:00:00 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8019"]
+Oct 02, 2013 2:00:00 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Oct 02, 2013 2:00:00 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.39
+Oct 02, 2013 2:00:00 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /vagrant/artifactory-3.0.3/tomcat/conf/Catalina/localhost/artifactory.xml
+[ARTIFACTORY] [INFO] Starting Artifactory [artifactory.home=/vagrant/artifactory-3.0.3].
+2013-10-02 14:00:27,205 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:184) - 
+               _   _  __           _
+    /\        | | (_)/ _|         | |
+   /  \   _ __| |_ _| |_ __ _  ___| |_ ___  _ __ _   _
+  / /\ \ | '__| __| |  _/ _` |/ __| __/ _ \| '__| | | |
+ / ____ \| |  | |_| | || (_| | (__| || (_) | |  | |_| |
+/_/    \_\_|   \__|_|_| \__,_|\___|\__\___/|_|   \__, |
+ Version:  3.0.3                                  __/ |
+ Revision: 30044                                 |___/
+ Artifactory Home: '/vagrant/artifactory-3.0.3'
+
+Oct 02, 2013 2:00:27 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /vagrant/artifactory-3.0.3/tomcat/webapps/ROOT
+Oct 02, 2013 2:00:28 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8081"]
+Oct 02, 2013 2:00:28 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8019"]
+2013-10-02 14:00:28,577 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:166) - Refreshing Artifactory: startup date [Wed Oct 02 14:00:28 UTC 2013]; root of context hierarchy
+Oct 02, 2013 2:01:20 PM hudson.model.Run execute
+INFO: sourcetalk-1 #25 main build action completed: FAILURE
+2013-10-02 14:01:31,412 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:168) - Database: Apache Derby 10.9.1.0 - (1344872). Driver: Apache Derby Embedded JDBC Driver 10.9.1.0 - (1344872)
+2013-10-02 14:01:31,412 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:170) - Connection URL: jdbc:derby:/vagrant/artifactory-3.0.3/data/derby
+2013-10-02 14:01:36,895 [art-init] [INFO ] (o.a.s.ArtifactorySchedulerFactoryBean:648) - Starting Quartz Scheduler now
+2013-10-02 14:01:36,913 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:174) - Artifactory context starting up...
+2013-10-02 14:01:36,914 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.storage.db.DbService
+2013-10-02 14:01:36,933 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.interceptor.StorageInterceptors
+2013-10-02 14:01:36,934 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.config.ConfigurationChangesInterceptors
+2013-10-02 14:01:36,936 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.config.InternalCentralConfigService
+2013-10-02 14:01:39,194 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.schedule.TaskService
+2013-10-02 14:01:39,201 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.service.InternalRepositoryService
+2013-10-02 14:01:39,661 [art-init] [INFO ] (o.a.i.InfoWriter    :85) - 
+
+ SYSTEM INFORMATION DUMP
+ =======================
+
+ User Info
+ ========================
+   user.country                                                          | US
+   user.dir                                                              | /vagrant
+   user.home                                                             | /home/vagrant
+   user.language                                                         | en
+   user.name                                                             | vagrant
+   user.timezone                                                         | Etc/UTC
+
+ Host Info
+ ========================
+   Available Processors                                                  | 2
+   Heap Memory Usage-Commited                                            | 536870912
+   Heap Memory Usage-Init                                                | 536870912
+   Heap Memory Usage-Max                                                 | 2147483648
+   Heap Memory Usage-Used                                                | 336552072
+   Non-Heap Memory Usage-Commited                                        | 138280960
+   Non-Heap Memory Usage-Init                                            | 136773632
+   Non-Heap Memory Usage-Max                                             | 184549376
+   Non-Heap Memory Usage-Used                                            | 49749608
+   os.arch                                                               | amd64
+   os.name                                                               | Linux
+   os.version                                                            | 3.8.0-31-generic
+
+ Artifactory Info
+ ========================
+   artifactory.runMode.test                                              | false
+   artifactory.runMode.qa                                                | false
+   artifactory.runMode.dev                                               | false
+   artifactory.version                                                   | 3.0.3
+   artifactory.revision                                                  | 30044
+   artifactory.servlet.supportUrlSessionTracking                         | false
+   artifactory.addons.disabled                                           | 
+   artifactory.addons.info.url                                           | http
+                                                                         | //service.jfrog.org/artifactory/addons/info/%s
+   artifactory.async.corePoolSize                                        | 8
+   artifactory.async.poolTtlSecs                                         | 60
+   artifactory.async.poolMaxQueueSize                                    | 10000
+   artifactory.versioningQueryIntervalSecs                               | 7200
+   artifactory.logs.viewRefreshRateSecs                                  | 10
+   artifactory.locks.timeoutSecs                                         | 120
+   artifactory.locks.debugTimeouts                                       | false
+   artifactory.task.completionLockTimeoutRetries                         | 100
+   artifactory.repo.concurrentDownloadSyncTimeoutSecs                    | 900
+   artifactory.repo.downloadStatsEnabled                                 | true
+   artifactory.fsitem.cache.idleTimeSecs                                 | 1200
+   artifactory.search.maxResults                                         | 500
+   artifactory.search.userQueryLimit                                     | 1000
+   artifactory.search.content.maxFragments                               | 500
+   artifactory.search.content.maxFragmentsSize                           | 5000
+   artifactory.search.archive.minQueryLength                             | 3
+   artifactory.search.pattern.timeoutSecs                                | 30
+   artifactory.gc.useIndex                                               | false
+   artifactory.gc.intervalSecs                                           | 86400
+   artifactory.gc.delaySecs                                              | 7200
+   artifactory.gc.sleepBetweenNodesMillis                                | 20
+   artifactory.gc.scanStartSleepingThresholdMillis                       | 20000
+   artifactory.gc.scanSleepBetweenIterationsMillis                       | 200
+   artifactory.gc.fileScanSleepIterationMillis                           | 1000
+   artifactory.gc.fileScanSleepMillis                                    | 250
+   artifactory.gc.maxCacheEntries                                        | 10000
+   artifactory.traffic.collectionActive                                  | false
+   artifactory.security.authentication.cache.idleTimeSecs                | 300
+   artifactory.security.userLastAccessUpdatesResolutionSecs              | 5
+   artifactory.security.authentication.encryptedPassword.surroundChars   | **
+   artifactory.mvn.central.hostPattern                                   | .maven.org
+   artifactory.mvn.central.indexerMaxQueryIntervalSecs                   | 86400
+   artifactory.mvn.dynamicMetadata.cacheRetentionSecs                    | 10
+   artifactory.mvn.metadata.version3.enabled                             | true
+   artifactory.mvn.custom.types                                          | tar.gz
+   artifactory.request.disableVersionTokens                              | false
+   artifactory.request.searchLatestReleaseByDateCreated                  | false
+   artifactory.build.maxFoldersToScanForDeletionWarnings                 | 2
+   artifactory.build.checksum.cache.idleTimeSecs                         | 300
+   artifactory.updates.refreshIntervalSecs                               | 14400
+   artifactory.updates.url                                               | http
+                                                                         | //service.jfrog.org/artifactory/updates
+   artifactory.artifactoryRequestsToGlobalCanRetrieveRemoteArtifacts     | false
+   artifactory.ui.syntaxColoringMaxTextSizeBytes                         | 512000
+   artifactory.plugin.scripts.refreshIntervalSecs                        | 0
+   artifactory.file.roller.maxFileToRetain                               | 10
+   artifactory.backup.fileExportSleepIterationMillis                     | 2000
+   artifactory.backup.fileExportSleepMillis                              | 250
+   artifactory.http.acceptEncoding.gzip                                  | true
+   artifactory.http.useExpectContinue                                    | false
+   artifactory.filtering.resourceSizeKb                                  | 64
+   artifactory.repo.remote.checkForExistingResourceOnRequest             | true
+   artifactory.version.query.enabled                                     | true
+   artifactory.response.disableContentDispositionFilename                | false
+   artifactory.yum.calculationRequest.aggregationTimeWindowSecs          | 60
+   artifactory.yum.calculationRequest.aggregationCycleSecs               | 60
+   artifactory.archive.licenseFile.names                                 | license,LICENSE,license.txt,LICENSE.txt,LICENSE.TXT
+   artifactory.ui.search.maxRowsPerPage                                  | 20
+   artifactory.replication.checksumDeploy.minSizeKb                      | 10
+   artifactory.replication.consumer.queueSize                            | 1
+   artifactory.replication.local.iteration.sleepThresholdMillis          | 1000
+   artifactory.replication.local.iteration.sleepMillis                   | 100
+   artifactory.replication.event.queue.size                              | 50000
+   artifactory.request.explodedArchiveExtensions                         | zip,tar,tar.gz,tgz
+   artifactory.bintray.jcenter.url                                       | http
+                                                                         | //jcenter.bintray.com
+   artifactory.bintray.url                                               | https
+                                                                         | //bintray.com
+   artifactory.bintray.api.url                                           | https
+                                                                         | //api.bintray.com
+   artifactory.bintray.ui.hideUploads                                    | false
+   artifactory.bintray.ui.hideInfo                                       | false
+   artifactory.bintray.ui.hideRemoteSearch                               | false
+   artifactory.useUserNameAutoCompleteOnLogin                            | on
+   artifactory.ui.hideEncryptedPassword                                  | *****
+   artifactory.stats.flushIntervalSecs                                   | 30
+   artifactory.integrationCleanup.intervalSecs                           | 300
+   artifactory.integrationCleanup.quietPeriodSecs                        | 60
+   artifactory.folderPruning.intervalSecs                                | 300
+   artifactory.folderPruning.quietPeriodSecs                             | 60
+   artifactory.security.authentication.password.salt                     | ****************
+   artifactory.db.idGenerator.fetch.amount                               | 1000
+   artifactory.gems.localIndexTaskIntervalSecs                           | 30
+   artifactory.gems.virtualIndexTaskIntervalSecs                         | 300
+   artifactory.gems.gemsIndexTaskQueueLimit                              | 20000
+   artifactory.gems.gemsAfterRepoInitHack                                | true
+   derby.storage.pageCacheSize                                           | 500
+   artifactory.home                                                      | /vagrant/artifactory-3.0.3
+   derby.module.mgmt.jmx                                                 | org.apache.derby.impl.services.jmxnone.NoManagementService
+   derby.language.logStatementText                                       | false
+   derby.stream.error.logSeverityLevel                                   | 0
+   artifactory.release                                                   | 1376218388685
+
+ Java System Info
+ ========================
+   java.class.version                                                    | 51.0
+   java.home                                                             | /usr/lib/jvm/java-7-openjdk-amd64/jre
+   java.io.tmpdir                                                        | /vagrant/artifactory-3.0.3/tomcat/temp
+   java.runtime.name                                                     | OpenJDK Runtime Environment
+   java.runtime.version                                                  | 1.7.0_25-b30
+   java.specification.name                                               | Java Platform API Specification
+   java.specification.vendor                                             | Oracle Corporation
+   java.specification.version                                            | 1.7
+   java.vendor                                                           | Oracle Corporation
+   java.vendor.url                                                       | http
+                                                                         | //java.oracle.com/
+   java.vendor.url.bug                                                   | http
+                                                                         | //bugreport.sun.com/bugreport/
+   java.version                                                          | 1.7.0_25
+   java.vm.info                                                          | mixed mode
+   java.vm.name                                                          | OpenJDK 64-Bit Server VM
+   java.vm.specification.name                                            | Java Virtual Machine Specification
+   java.vm.specification.vendor                                          | Oracle Corporation
+   java.vm.specification.version                                         | 1.7
+   java.vm.vendor                                                        | Oracle Corporation
+   java.vm.version                                                       | 23.7-b01
+   sun.arch.data.model                                                   | 64
+   sun.boot.library.path                                                 | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64
+   sun.cpu.endian                                                        | little
+   sun.cpu.isalist                                                       | 
+   sun.io.unicode.encoding                                               | UnicodeLittle
+   sun.java.launcher                                                     | SUN_STANDARD
+   sun.jnu.encoding                                                      | ANSI_X3.4-1968
+   sun.management.compiler                                               | HotSpot 64-Bit Tiered Compilers
+   sun.os.patch.level                                                    | unknown
+   JVM Input arguments                                                   | -Djava.util.logging.config.file=/vagrant/artifactory-3.0.3/tomcat/conf/logging.properties
+                                                                         | -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+                                                                         | -Xms512m
+                                                                         | -Xmx2g
+                                                                         | -Xss256k
+                                                                         | -XX
+                                                                         | PermSize=128m
+                                                                         | -XX
+                                                                         | MaxPermSize=128m
+                                                                         | -XX
+                                                                         | +UseG1GC
+                                                                         | -Dartifactory.home=/vagrant/artifactory-3.0.3
+                                                                         | -Dfile.encoding=UTF8
+                                                                         | -Djava.endorsed.dirs=/vagrant/artifactory-3.0.3/tomcat/endorsed
+                                                                         | -Dcatalina.base=/vagrant/artifactory-3.0.3/tomcat
+                                                                         | -Dcatalina.home=/vagrant/artifactory-3.0.3/tomcat
+                                                                         | -Djava.io.tmpdir=/vagrant/artifactory-3.0.3/tomcat/temp
+
+ Java Class Path Info
+ ========================
+   sun.boot.class.path                                                   | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/netx.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/plugin.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/classes
+   java.library.path                                                     | /usr/java/packages/lib/amd64
+                                                                         | /usr/lib/jni
+                                                                         | /lib
+                                                                         | /usr/lib
+   java.endorsed.dirs                                                    | /vagrant/artifactory-3.0.3/tomcat/endorsed
+   java.ext.dirs                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext
+                                                                         | /usr/java/packages/lib/ext
+   java.class.path                                                       | /vagrant/artifactory-3.0.3/tomcat/bin/bootstrap.jar
+                                                                         | /vagrant/artifactory-3.0.3/tomcat/bin/tomcat-juli.jar
+
+2013-10-02 14:01:39,706 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.search.InternalSearchService
+2013-10-02 14:01:39,707 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.security.ldap.InternalLdapAuthenticator
+2013-10-02 14:01:39,708 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.security.InternalSecurityService
+2013-10-02 14:01:39,803 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.md.MetadataDefinitionService
+2013-10-02 14:01:39,973 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.index.InternalMavenIndexerService
+2013-10-02 14:01:39,987 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cleanup.InternalIntegrationCleanupService
+2013-10-02 14:01:39,993 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cleanup.InternalArtifactCleanupService
+2013-10-02 14:01:40,031 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.security.interceptor.SecurityConfigurationChangesInterceptors
+2013-10-02 14:01:40,033 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.traffic.InternalTrafficService
+2013-10-02 14:01:40,040 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.build.InternalBuildService
+2013-10-02 14:01:40,042 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.interceptor.StorageAggregationInterceptors
+2013-10-02 14:01:40,045 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cache.expirable.CacheExpiry
+2013-10-02 14:01:40,047 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.backup.InternalBackupService
+2013-10-02 14:01:40,071 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.interceptor.ImportInterceptors
+2013-10-02 14:01:40,074 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.storage.InternalStorageService
+2013-10-02 14:01:40,088 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cleanup.InternalFolderPruningService
+2013-10-02 14:01:40,093 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.engine.InternalDownloadService
+2013-10-02 14:01:40,122 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:339) - Artifactory application context is ready.
+2013-10-02 14:01:40,155 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:220) - 
+###########################################################
+### Artifactory successfully started (72.956 seconds)   ###
+###########################################################
+
+Error: Could not find or load main class org.h2.tools.Server
+2013-10-02 14:02:31,553 [http-bio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/26/continuous-delivery-training-26.jar' Content-Length: 1375504
+2013-10-02 14:02:32,470 [http-bio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/26/continuous-delivery-training-26.jar.sha1' Content-Length: 40
+2013-10-02 14:02:32,479 [art-exec-5] [INFO ] (o.a.s.a.ArchiveIndexerImpl:128) - Indexing archive: libs-release-local:sourcetalk-tage/continuous-delivery-training/26/continuous-delivery-training-26.jar
+2013-10-02 14:02:32,515 [http-bio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/26/continuous-delivery-training-26.jar.md5' Content-Length: 32
+2013-10-02 14:02:32,542 [http-bio-8081-exec-8] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/26/continuous-delivery-training-26.pom' Content-Length: 6070
+2013-10-02 14:02:32,783 [http-bio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/26/continuous-delivery-training-26.pom.sha1' Content-Length: 40
+2013-10-02 14:02:32,808 [http-bio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/26/continuous-delivery-training-26.pom.md5' Content-Length: 32
+2013-10-02 14:02:33,378 [http-bio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml' Content-Length: 453
+2013-10-02 14:02:33,558 [http-bio-8081-exec-9] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.sha1' Content-Length: 40
+2013-10-02 14:02:33,568 [http-bio-8081-exec-1] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.md5' Content-Length: 32
+Oct 02, 2013 2:02:41 PM hudson.model.Run execute
+INFO: sourcetalk-1 #26 main build action completed: FAILURE

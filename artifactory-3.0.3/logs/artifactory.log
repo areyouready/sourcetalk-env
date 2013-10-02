@@ -1,0 +1,595 @@
+2013-10-02 11:56:15,228 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:184) - 
+               _   _  __           _
+    /\        | | (_)/ _|         | |
+   /  \   _ __| |_ _| |_ __ _  ___| |_ ___  _ __ _   _
+  / /\ \ | '__| __| |  _/ _` |/ __| __/ _ \| '__| | | |
+ / ____ \| |  | |_| | || (_| | (__| || (_) | |  | |_| |
+/_/    \_\_|   \__|_|_| \__,_|\___|\__\___/|_|   \__, |
+ Version:  3.0.3                                  __/ |
+ Revision: 30044                                 |___/
+ Artifactory Home: '/vagrant/artifactory-3.0.3'
+
+2013-10-02 11:56:16,553 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:166) - Refreshing Artifactory: startup date [Wed Oct 02 11:56:16 UTC 2013]; root of context hierarchy
+2013-10-02 11:56:30,293 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:168) - Database: Apache Derby 10.9.1.0 - (1344872). Driver: Apache Derby Embedded JDBC Driver 10.9.1.0 - (1344872)
+2013-10-02 11:56:30,294 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:170) - Connection URL: jdbc:derby:/vagrant/artifactory-3.0.3/data/derby
+2013-10-02 11:56:31,431 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:156) - ***Creating database schema***
+2013-10-02 11:56:40,404 [art-init] [INFO ] (o.a.s.ArtifactorySchedulerFactoryBean:648) - Starting Quartz Scheduler now
+2013-10-02 11:56:40,437 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:174) - Artifactory context starting up...
+2013-10-02 11:56:40,439 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.storage.db.DbService
+2013-10-02 11:56:40,480 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.interceptor.StorageAggregationInterceptors
+2013-10-02 11:56:40,482 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.interceptor.StorageInterceptors
+2013-10-02 11:56:40,485 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.config.ConfigurationChangesInterceptors
+2013-10-02 11:56:40,487 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.config.InternalCentralConfigService
+2013-10-02 11:56:40,569 [art-init] [INFO ] (o.a.c.CentralConfigServiceImpl:126) - Loading bootstrap configuration (artifactory home dir is /vagrant/artifactory-3.0.3).
+2013-10-02 11:56:43,047 [art-init] [INFO ] (o.a.c.CentralConfigServiceImpl:274) - Saving new configuration in storage...
+2013-10-02 11:56:43,251 [art-init] [INFO ] (o.a.c.CentralConfigServiceImpl:277) - New configuration saved.
+2013-10-02 11:56:43,255 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.schedule.TaskService
+2013-10-02 11:56:43,270 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.service.InternalRepositoryService
+2013-10-02 11:56:43,955 [art-init] [INFO ] (o.a.i.InfoWriter    :85) - 
+
+ SYSTEM INFORMATION DUMP
+ =======================
+
+ User Info
+ ========================
+   user.country                                                          | US
+   user.dir                                                              | /vagrant
+   user.home                                                             | /home/vagrant
+   user.language                                                         | en
+   user.name                                                             | vagrant
+   user.timezone                                                         | Etc/UTC
+
+ Host Info
+ ========================
+   Available Processors                                                  | 2
+   Heap Memory Usage-Commited                                            | 536870912
+   Heap Memory Usage-Init                                                | 536870912
+   Heap Memory Usage-Max                                                 | 2147483648
+   Heap Memory Usage-Used                                                | 135022424
+   Non-Heap Memory Usage-Commited                                        | 138543104
+   Non-Heap Memory Usage-Init                                            | 136773632
+   Non-Heap Memory Usage-Max                                             | 184549376
+   Non-Heap Memory Usage-Used                                            | 49975520
+   os.arch                                                               | amd64
+   os.name                                                               | Linux
+   os.version                                                            | 3.8.0-31-generic
+
+ Artifactory Info
+ ========================
+   artifactory.runMode.test                                              | false
+   artifactory.runMode.qa                                                | false
+   artifactory.runMode.dev                                               | false
+   artifactory.version                                                   | 3.0.3
+   artifactory.revision                                                  | 30044
+   artifactory.servlet.supportUrlSessionTracking                         | false
+   artifactory.addons.disabled                                           | 
+   artifactory.addons.info.url                                           | http
+                                                                         | //service.jfrog.org/artifactory/addons/info/%s
+   artifactory.async.corePoolSize                                        | 8
+   artifactory.async.poolTtlSecs                                         | 60
+   artifactory.async.poolMaxQueueSize                                    | 10000
+   artifactory.versioningQueryIntervalSecs                               | 7200
+   artifactory.logs.viewRefreshRateSecs                                  | 10
+   artifactory.locks.timeoutSecs                                         | 120
+   artifactory.locks.debugTimeouts                                       | false
+   artifactory.task.completionLockTimeoutRetries                         | 100
+   artifactory.repo.concurrentDownloadSyncTimeoutSecs                    | 900
+   artifactory.repo.downloadStatsEnabled                                 | true
+   artifactory.fsitem.cache.idleTimeSecs                                 | 1200
+   artifactory.search.maxResults                                         | 500
+   artifactory.search.userQueryLimit                                     | 1000
+   artifactory.search.content.maxFragments                               | 500
+   artifactory.search.content.maxFragmentsSize                           | 5000
+   artifactory.search.archive.minQueryLength                             | 3
+   artifactory.search.pattern.timeoutSecs                                | 30
+   artifactory.gc.useIndex                                               | false
+   artifactory.gc.intervalSecs                                           | 86400
+   artifactory.gc.delaySecs                                              | 7200
+   artifactory.gc.sleepBetweenNodesMillis                                | 20
+   artifactory.gc.scanStartSleepingThresholdMillis                       | 20000
+   artifactory.gc.scanSleepBetweenIterationsMillis                       | 200
+   artifactory.gc.fileScanSleepIterationMillis                           | 1000
+   artifactory.gc.fileScanSleepMillis                                    | 250
+   artifactory.gc.maxCacheEntries                                        | 10000
+   artifactory.traffic.collectionActive                                  | false
+   artifactory.security.authentication.cache.idleTimeSecs                | 300
+   artifactory.security.userLastAccessUpdatesResolutionSecs              | 5
+   artifactory.security.authentication.encryptedPassword.surroundChars   | **
+   artifactory.mvn.central.hostPattern                                   | .maven.org
+   artifactory.mvn.central.indexerMaxQueryIntervalSecs                   | 86400
+   artifactory.mvn.dynamicMetadata.cacheRetentionSecs                    | 10
+   artifactory.mvn.metadata.version3.enabled                             | true
+   artifactory.mvn.custom.types                                          | tar.gz
+   artifactory.request.disableVersionTokens                              | false
+   artifactory.request.searchLatestReleaseByDateCreated                  | false
+   artifactory.build.maxFoldersToScanForDeletionWarnings                 | 2
+   artifactory.build.checksum.cache.idleTimeSecs                         | 300
+   artifactory.updates.refreshIntervalSecs                               | 14400
+   artifactory.updates.url                                               | http
+                                                                         | //service.jfrog.org/artifactory/updates
+   artifactory.artifactoryRequestsToGlobalCanRetrieveRemoteArtifacts     | false
+   artifactory.ui.syntaxColoringMaxTextSizeBytes                         | 512000
+   artifactory.plugin.scripts.refreshIntervalSecs                        | 0
+   artifactory.file.roller.maxFileToRetain                               | 10
+   artifactory.backup.fileExportSleepIterationMillis                     | 2000
+   artifactory.backup.fileExportSleepMillis                              | 250
+   artifactory.http.acceptEncoding.gzip                                  | true
+   artifactory.http.useExpectContinue                                    | false
+   artifactory.filtering.resourceSizeKb                                  | 64
+   artifactory.repo.remote.checkForExistingResourceOnRequest             | true
+   artifactory.version.query.enabled                                     | true
+   artifactory.response.disableContentDispositionFilename                | false
+   artifactory.yum.calculationRequest.aggregationTimeWindowSecs          | 60
+   artifactory.yum.calculationRequest.aggregationCycleSecs               | 60
+   artifactory.archive.licenseFile.names                                 | license,LICENSE,license.txt,LICENSE.txt,LICENSE.TXT
+   artifactory.ui.search.maxRowsPerPage                                  | 20
+   artifactory.replication.checksumDeploy.minSizeKb                      | 10
+   artifactory.replication.consumer.queueSize                            | 1
+   artifactory.replication.local.iteration.sleepThresholdMillis          | 1000
+   artifactory.replication.local.iteration.sleepMillis                   | 100
+   artifactory.replication.event.queue.size                              | 50000
+   artifactory.request.explodedArchiveExtensions                         | zip,tar,tar.gz,tgz
+   artifactory.bintray.jcenter.url                                       | http
+                                                                         | //jcenter.bintray.com
+   artifactory.bintray.url                                               | https
+                                                                         | //bintray.com
+   artifactory.bintray.api.url                                           | https
+                                                                         | //api.bintray.com
+   artifactory.bintray.ui.hideUploads                                    | false
+   artifactory.bintray.ui.hideInfo                                       | false
+   artifactory.bintray.ui.hideRemoteSearch                               | false
+   artifactory.useUserNameAutoCompleteOnLogin                            | on
+   artifactory.ui.hideEncryptedPassword                                  | *****
+   artifactory.stats.flushIntervalSecs                                   | 30
+   artifactory.integrationCleanup.intervalSecs                           | 300
+   artifactory.integrationCleanup.quietPeriodSecs                        | 60
+   artifactory.folderPruning.intervalSecs                                | 300
+   artifactory.folderPruning.quietPeriodSecs                             | 60
+   artifactory.security.authentication.password.salt                     | ****************
+   artifactory.db.idGenerator.fetch.amount                               | 1000
+   artifactory.gems.localIndexTaskIntervalSecs                           | 30
+   artifactory.gems.virtualIndexTaskIntervalSecs                         | 300
+   artifactory.gems.gemsIndexTaskQueueLimit                              | 20000
+   artifactory.gems.gemsAfterRepoInitHack                                | true
+   derby.storage.pageCacheSize                                           | 500
+   artifactory.home                                                      | /vagrant/artifactory-3.0.3
+   derby.module.mgmt.jmx                                                 | org.apache.derby.impl.services.jmxnone.NoManagementService
+   derby.language.logStatementText                                       | false
+   derby.stream.error.logSeverityLevel                                   | 0
+   artifactory.release                                                   | 1376218388685
+
+ Java System Info
+ ========================
+   java.class.version                                                    | 51.0
+   java.home                                                             | /usr/lib/jvm/java-7-openjdk-amd64/jre
+   java.io.tmpdir                                                        | /vagrant/artifactory-3.0.3/tomcat/temp
+   java.runtime.name                                                     | OpenJDK Runtime Environment
+   java.runtime.version                                                  | 1.7.0_25-b30
+   java.specification.name                                               | Java Platform API Specification
+   java.specification.vendor                                             | Oracle Corporation
+   java.specification.version                                            | 1.7
+   java.vendor                                                           | Oracle Corporation
+   java.vendor.url                                                       | http
+                                                                         | //java.oracle.com/
+   java.vendor.url.bug                                                   | http
+                                                                         | //bugreport.sun.com/bugreport/
+   java.version                                                          | 1.7.0_25
+   java.vm.info                                                          | mixed mode
+   java.vm.name                                                          | OpenJDK 64-Bit Server VM
+   java.vm.specification.name                                            | Java Virtual Machine Specification
+   java.vm.specification.vendor                                          | Oracle Corporation
+   java.vm.specification.version                                         | 1.7
+   java.vm.vendor                                                        | Oracle Corporation
+   java.vm.version                                                       | 23.7-b01
+   sun.arch.data.model                                                   | 64
+   sun.boot.library.path                                                 | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64
+   sun.cpu.endian                                                        | little
+   sun.cpu.isalist                                                       | 
+   sun.io.unicode.encoding                                               | UnicodeLittle
+   sun.java.launcher                                                     | SUN_STANDARD
+   sun.jnu.encoding                                                      | ANSI_X3.4-1968
+   sun.management.compiler                                               | HotSpot 64-Bit Tiered Compilers
+   sun.os.patch.level                                                    | unknown
+   JVM Input arguments                                                   | -Djava.util.logging.config.file=/vagrant/artifactory-3.0.3/tomcat/conf/logging.properties
+                                                                         | -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+                                                                         | -Xms512m
+                                                                         | -Xmx2g
+                                                                         | -Xss256k
+                                                                         | -XX
+                                                                         | PermSize=128m
+                                                                         | -XX
+                                                                         | MaxPermSize=128m
+                                                                         | -XX
+                                                                         | +UseG1GC
+                                                                         | -Dartifactory.home=/vagrant/artifactory-3.0.3
+                                                                         | -Dfile.encoding=UTF8
+                                                                         | -Djava.endorsed.dirs=/vagrant/artifactory-3.0.3/tomcat/endorsed
+                                                                         | -Dcatalina.base=/vagrant/artifactory-3.0.3/tomcat
+                                                                         | -Dcatalina.home=/vagrant/artifactory-3.0.3/tomcat
+                                                                         | -Djava.io.tmpdir=/vagrant/artifactory-3.0.3/tomcat/temp
+
+ Java Class Path Info
+ ========================
+   sun.boot.class.path                                                   | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/netx.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/plugin.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/classes
+   java.library.path                                                     | /usr/java/packages/lib/amd64
+                                                                         | /usr/lib/jni
+                                                                         | /lib
+                                                                         | /usr/lib
+   java.endorsed.dirs                                                    | /vagrant/artifactory-3.0.3/tomcat/endorsed
+   java.ext.dirs                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext
+                                                                         | /usr/java/packages/lib/ext
+   java.class.path                                                       | /vagrant/artifactory-3.0.3/tomcat/bin/bootstrap.jar
+                                                                         | /vagrant/artifactory-3.0.3/tomcat/bin/tomcat-juli.jar
+
+2013-10-02 11:56:44,133 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.backup.InternalBackupService
+2013-10-02 11:56:44,186 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.security.ldap.InternalLdapAuthenticator
+2013-10-02 11:56:44,189 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.md.MetadataDefinitionService
+2013-10-02 11:56:44,355 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.engine.InternalDownloadService
+2013-10-02 11:56:44,357 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.search.InternalSearchService
+2013-10-02 11:56:44,358 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.build.InternalBuildService
+2013-10-02 11:56:44,360 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.index.InternalMavenIndexerService
+2013-10-02 11:56:44,366 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cache.expirable.CacheExpiry
+2013-10-02 11:56:44,368 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cleanup.InternalIntegrationCleanupService
+2013-10-02 11:56:44,370 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.storage.InternalStorageService
+2013-10-02 11:56:44,381 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.security.interceptor.SecurityConfigurationChangesInterceptors
+2013-10-02 11:56:44,383 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cleanup.InternalFolderPruningService
+2013-10-02 11:56:44,387 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.interceptor.ImportInterceptors
+2013-10-02 11:56:44,388 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cleanup.InternalArtifactCleanupService
+2013-10-02 11:56:44,401 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.traffic.InternalTrafficService
+2013-10-02 11:56:44,408 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.security.InternalSecurityService
+2013-10-02 11:56:45,260 [art-init] [INFO ] (o.a.s.SecurityServiceImpl:1157) - Creating the default super user 'admin', since no admin user exists!
+2013-10-02 11:56:45,356 [art-init] [INFO ] (o.a.s.SecurityServiceImpl:1186) - Creating the default anonymous user, since it does not exists!
+2013-10-02 11:56:45,823 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:339) - Artifactory application context is ready.
+2013-10-02 11:56:45,914 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:220) - 
+###########################################################
+### Artifactory successfully started (30.646 seconds)   ###
+###########################################################
+
+2013-10-02 12:00:00,329 [art-exec-12] [INFO ] (o.a.s.b.GarbageCollectorInfo:76) - Storage garbage collector report:
+Number of binaries:      0
+Total execution time:    296 millis
+Candidates for deletion: 0
+Checksums deleted:       0
+Binaries deleted:        0
+Total size freed:        0 bytes
+Current total size:      0 bytes
+2013-10-02 13:32:51,730 [http-bio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/21/continuous-delivery-training-21.jar' Content-Length: 1375503
+2013-10-02 13:32:52,353 [http-bio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/21/continuous-delivery-training-21.jar.sha1' Content-Length: 40
+2013-10-02 13:32:52,370 [art-exec-240] [INFO ] (o.a.s.a.ArchiveIndexerImpl:128) - Indexing archive: libs-release-local:sourcetalk-tage/continuous-delivery-training/21/continuous-delivery-training-21.jar
+2013-10-02 13:32:52,394 [http-bio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/21/continuous-delivery-training-21.jar.md5' Content-Length: 32
+2013-10-02 13:32:52,406 [http-bio-8081-exec-5] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/21/continuous-delivery-training-21.pom' Content-Length: 6070
+2013-10-02 13:32:52,684 [http-bio-8081-exec-9] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/21/continuous-delivery-training-21.pom.sha1' Content-Length: 40
+2013-10-02 13:32:52,697 [http-bio-8081-exec-8] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/21/continuous-delivery-training-21.pom.md5' Content-Length: 32
+2013-10-02 13:32:52,798 [http-bio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml' Content-Length: 317
+2013-10-02 13:32:52,836 [http-bio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.sha1' Content-Length: 40
+2013-10-02 13:32:52,844 [http-bio-8081-exec-15] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.md5' Content-Length: 32
+2013-10-02 13:49:19,813 [http-bio-8081-exec-9] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/22/continuous-delivery-training-22.jar' Content-Length: 1375502
+2013-10-02 13:49:19,934 [art-exec-282] [INFO ] (o.a.s.a.ArchiveIndexerImpl:128) - Indexing archive: libs-release-local:sourcetalk-tage/continuous-delivery-training/22/continuous-delivery-training-22.jar
+2013-10-02 13:49:19,982 [http-bio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/22/continuous-delivery-training-22.jar.sha1' Content-Length: 40
+2013-10-02 13:49:19,997 [http-bio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/22/continuous-delivery-training-22.jar.md5' Content-Length: 32
+2013-10-02 13:49:20,008 [http-bio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/22/continuous-delivery-training-22.pom' Content-Length: 6070
+2013-10-02 13:49:20,045 [http-bio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/22/continuous-delivery-training-22.pom.sha1' Content-Length: 40
+2013-10-02 13:49:20,056 [http-bio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/22/continuous-delivery-training-22.pom.md5' Content-Length: 32
+2013-10-02 13:49:20,682 [http-bio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml' Content-Length: 369
+2013-10-02 13:49:20,759 [http-bio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.sha1' Content-Length: 40
+2013-10-02 13:49:20,765 [http-bio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.md5' Content-Length: 32
+2013-10-02 13:50:51,654 [http-bio-8081-exec-9] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/23/continuous-delivery-training-23.jar' Content-Length: 1375505
+2013-10-02 13:50:51,736 [art-exec-288] [INFO ] (o.a.s.a.ArchiveIndexerImpl:128) - Indexing archive: libs-release-local:sourcetalk-tage/continuous-delivery-training/23/continuous-delivery-training-23.jar
+2013-10-02 13:50:51,789 [http-bio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/23/continuous-delivery-training-23.jar.sha1' Content-Length: 40
+2013-10-02 13:50:51,797 [http-bio-8081-exec-5] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/23/continuous-delivery-training-23.jar.md5' Content-Length: 32
+2013-10-02 13:50:51,807 [http-bio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/23/continuous-delivery-training-23.pom' Content-Length: 6070
+2013-10-02 13:50:51,853 [http-bio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/23/continuous-delivery-training-23.pom.sha1' Content-Length: 40
+2013-10-02 13:50:51,867 [http-bio-8081-exec-15] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/23/continuous-delivery-training-23.pom.md5' Content-Length: 32
+2013-10-02 13:50:52,036 [http-bio-8081-exec-8] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml' Content-Length: 397
+2013-10-02 13:50:52,069 [http-bio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.sha1' Content-Length: 40
+2013-10-02 13:50:52,076 [http-bio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.md5' Content-Length: 32
+2013-10-02 13:52:55,643 [http-bio-8081-exec-5] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/24/continuous-delivery-training-24.jar' Content-Length: 1375503
+2013-10-02 13:52:55,730 [art-exec-297] [INFO ] (o.a.s.a.ArchiveIndexerImpl:128) - Indexing archive: libs-release-local:sourcetalk-tage/continuous-delivery-training/24/continuous-delivery-training-24.jar
+2013-10-02 13:52:55,842 [http-bio-8081-exec-8] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/24/continuous-delivery-training-24.jar.sha1' Content-Length: 40
+2013-10-02 13:52:55,856 [http-bio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/24/continuous-delivery-training-24.jar.md5' Content-Length: 32
+2013-10-02 13:52:55,867 [http-bio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/24/continuous-delivery-training-24.pom' Content-Length: 6070
+2013-10-02 13:52:55,903 [http-bio-8081-exec-15] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/24/continuous-delivery-training-24.pom.sha1' Content-Length: 40
+2013-10-02 13:52:55,915 [http-bio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/24/continuous-delivery-training-24.pom.md5' Content-Length: 32
+2013-10-02 13:52:56,020 [http-bio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml' Content-Length: 425
+2013-10-02 13:52:56,065 [http-bio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.sha1' Content-Length: 40
+2013-10-02 13:52:56,073 [http-bio-8081-exec-15] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.md5' Content-Length: 32
+2013-10-02 13:56:08,255 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.security.InternalSecurityService
+2013-10-02 13:56:08,257 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.traffic.InternalTrafficService
+2013-10-02 13:56:08,258 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.cleanup.InternalArtifactCleanupService
+2013-10-02 13:56:08,258 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:41) - Removing all job Artifact Cleanup from task service handler.
+2013-10-02 13:56:08,270 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.interceptor.ImportInterceptors
+2013-10-02 13:56:08,271 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.cleanup.InternalFolderPruningService
+2013-10-02 13:56:08,272 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.security.interceptor.SecurityConfigurationChangesInterceptors
+2013-10-02 13:56:08,272 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.storage.InternalStorageService
+2013-10-02 13:56:08,273 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:41) - Removing all job Garbage Collector from task service handler.
+2013-10-02 13:56:08,278 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.cleanup.InternalIntegrationCleanupService
+2013-10-02 13:56:08,279 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.cache.expirable.CacheExpiry
+2013-10-02 13:56:08,279 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.index.InternalMavenIndexerService
+2013-10-02 13:56:08,280 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:41) - Removing all job Indexer from task service handler.
+2013-10-02 13:56:08,284 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.build.InternalBuildService
+2013-10-02 13:56:08,285 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.search.InternalSearchService
+2013-10-02 13:56:08,285 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.engine.InternalDownloadService
+2013-10-02 13:56:08,286 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.md.MetadataDefinitionService
+2013-10-02 13:56:08,287 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.security.ldap.InternalLdapAuthenticator
+2013-10-02 13:56:08,288 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.backup.InternalBackupService
+2013-10-02 13:56:08,289 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:41) - Removing all job Backup from task service handler.
+2013-10-02 13:56:08,294 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.service.InternalRepositoryService
+2013-10-02 13:56:08,299 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.schedule.TaskService
+2013-10-02 13:56:08,304 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.config.InternalCentralConfigService
+2013-10-02 13:56:08,305 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.config.ConfigurationChangesInterceptors
+2013-10-02 13:56:08,306 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.interceptor.StorageInterceptors
+2013-10-02 13:56:08,307 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.repo.interceptor.StorageAggregationInterceptors
+2013-10-02 13:56:08,308 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:282) - Destroying org.artifactory.storage.db.DbService
+2013-10-02 13:56:08,310 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:296) - Closing Artifactory: startup date [Wed Oct 02 11:56:16 UTC 2013]; root of context hierarchy
+2013-10-02 13:56:08,331 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactorySchedulerFactoryBean:758) - Shutting down Quartz Scheduler
+2013-10-02 14:00:27,205 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:184) - 
+               _   _  __           _
+    /\        | | (_)/ _|         | |
+   /  \   _ __| |_ _| |_ __ _  ___| |_ ___  _ __ _   _
+  / /\ \ | '__| __| |  _/ _` |/ __| __/ _ \| '__| | | |
+ / ____ \| |  | |_| | || (_| | (__| || (_) | |  | |_| |
+/_/    \_\_|   \__|_|_| \__,_|\___|\__\___/|_|   \__, |
+ Version:  3.0.3                                  __/ |
+ Revision: 30044                                 |___/
+ Artifactory Home: '/vagrant/artifactory-3.0.3'
+
+2013-10-02 14:00:28,577 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:166) - Refreshing Artifactory: startup date [Wed Oct 02 14:00:28 UTC 2013]; root of context hierarchy
+2013-10-02 14:01:31,412 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:168) - Database: Apache Derby 10.9.1.0 - (1344872). Driver: Apache Derby Embedded JDBC Driver 10.9.1.0 - (1344872)
+2013-10-02 14:01:31,412 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:170) - Connection URL: jdbc:derby:/vagrant/artifactory-3.0.3/data/derby
+2013-10-02 14:01:36,895 [art-init] [INFO ] (o.a.s.ArtifactorySchedulerFactoryBean:648) - Starting Quartz Scheduler now
+2013-10-02 14:01:36,913 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:174) - Artifactory context starting up...
+2013-10-02 14:01:36,914 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.storage.db.DbService
+2013-10-02 14:01:36,933 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.interceptor.StorageInterceptors
+2013-10-02 14:01:36,934 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.config.ConfigurationChangesInterceptors
+2013-10-02 14:01:36,936 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.config.InternalCentralConfigService
+2013-10-02 14:01:39,194 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.schedule.TaskService
+2013-10-02 14:01:39,201 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.service.InternalRepositoryService
+2013-10-02 14:01:39,661 [art-init] [INFO ] (o.a.i.InfoWriter    :85) - 
+
+ SYSTEM INFORMATION DUMP
+ =======================
+
+ User Info
+ ========================
+   user.country                                                          | US
+   user.dir                                                              | /vagrant
+   user.home                                                             | /home/vagrant
+   user.language                                                         | en
+   user.name                                                             | vagrant
+   user.timezone                                                         | Etc/UTC
+
+ Host Info
+ ========================
+   Available Processors                                                  | 2
+   Heap Memory Usage-Commited                                            | 536870912
+   Heap Memory Usage-Init                                                | 536870912
+   Heap Memory Usage-Max                                                 | 2147483648
+   Heap Memory Usage-Used                                                | 336552072
+   Non-Heap Memory Usage-Commited                                        | 138280960
+   Non-Heap Memory Usage-Init                                            | 136773632
+   Non-Heap Memory Usage-Max                                             | 184549376
+   Non-Heap Memory Usage-Used                                            | 49749608
+   os.arch                                                               | amd64
+   os.name                                                               | Linux
+   os.version                                                            | 3.8.0-31-generic
+
+ Artifactory Info
+ ========================
+   artifactory.runMode.test                                              | false
+   artifactory.runMode.qa                                                | false
+   artifactory.runMode.dev                                               | false
+   artifactory.version                                                   | 3.0.3
+   artifactory.revision                                                  | 30044
+   artifactory.servlet.supportUrlSessionTracking                         | false
+   artifactory.addons.disabled                                           | 
+   artifactory.addons.info.url                                           | http
+                                                                         | //service.jfrog.org/artifactory/addons/info/%s
+   artifactory.async.corePoolSize                                        | 8
+   artifactory.async.poolTtlSecs                                         | 60
+   artifactory.async.poolMaxQueueSize                                    | 10000
+   artifactory.versioningQueryIntervalSecs                               | 7200
+   artifactory.logs.viewRefreshRateSecs                                  | 10
+   artifactory.locks.timeoutSecs                                         | 120
+   artifactory.locks.debugTimeouts                                       | false
+   artifactory.task.completionLockTimeoutRetries                         | 100
+   artifactory.repo.concurrentDownloadSyncTimeoutSecs                    | 900
+   artifactory.repo.downloadStatsEnabled                                 | true
+   artifactory.fsitem.cache.idleTimeSecs                                 | 1200
+   artifactory.search.maxResults                                         | 500
+   artifactory.search.userQueryLimit                                     | 1000
+   artifactory.search.content.maxFragments                               | 500
+   artifactory.search.content.maxFragmentsSize                           | 5000
+   artifactory.search.archive.minQueryLength                             | 3
+   artifactory.search.pattern.timeoutSecs                                | 30
+   artifactory.gc.useIndex                                               | false
+   artifactory.gc.intervalSecs                                           | 86400
+   artifactory.gc.delaySecs                                              | 7200
+   artifactory.gc.sleepBetweenNodesMillis                                | 20
+   artifactory.gc.scanStartSleepingThresholdMillis                       | 20000
+   artifactory.gc.scanSleepBetweenIterationsMillis                       | 200
+   artifactory.gc.fileScanSleepIterationMillis                           | 1000
+   artifactory.gc.fileScanSleepMillis                                    | 250
+   artifactory.gc.maxCacheEntries                                        | 10000
+   artifactory.traffic.collectionActive                                  | false
+   artifactory.security.authentication.cache.idleTimeSecs                | 300
+   artifactory.security.userLastAccessUpdatesResolutionSecs              | 5
+   artifactory.security.authentication.encryptedPassword.surroundChars   | **
+   artifactory.mvn.central.hostPattern                                   | .maven.org
+   artifactory.mvn.central.indexerMaxQueryIntervalSecs                   | 86400
+   artifactory.mvn.dynamicMetadata.cacheRetentionSecs                    | 10
+   artifactory.mvn.metadata.version3.enabled                             | true
+   artifactory.mvn.custom.types                                          | tar.gz
+   artifactory.request.disableVersionTokens                              | false
+   artifactory.request.searchLatestReleaseByDateCreated                  | false
+   artifactory.build.maxFoldersToScanForDeletionWarnings                 | 2
+   artifactory.build.checksum.cache.idleTimeSecs                         | 300
+   artifactory.updates.refreshIntervalSecs                               | 14400
+   artifactory.updates.url                                               | http
+                                                                         | //service.jfrog.org/artifactory/updates
+   artifactory.artifactoryRequestsToGlobalCanRetrieveRemoteArtifacts     | false
+   artifactory.ui.syntaxColoringMaxTextSizeBytes                         | 512000
+   artifactory.plugin.scripts.refreshIntervalSecs                        | 0
+   artifactory.file.roller.maxFileToRetain                               | 10
+   artifactory.backup.fileExportSleepIterationMillis                     | 2000
+   artifactory.backup.fileExportSleepMillis                              | 250
+   artifactory.http.acceptEncoding.gzip                                  | true
+   artifactory.http.useExpectContinue                                    | false
+   artifactory.filtering.resourceSizeKb                                  | 64
+   artifactory.repo.remote.checkForExistingResourceOnRequest             | true
+   artifactory.version.query.enabled                                     | true
+   artifactory.response.disableContentDispositionFilename                | false
+   artifactory.yum.calculationRequest.aggregationTimeWindowSecs          | 60
+   artifactory.yum.calculationRequest.aggregationCycleSecs               | 60
+   artifactory.archive.licenseFile.names                                 | license,LICENSE,license.txt,LICENSE.txt,LICENSE.TXT
+   artifactory.ui.search.maxRowsPerPage                                  | 20
+   artifactory.replication.checksumDeploy.minSizeKb                      | 10
+   artifactory.replication.consumer.queueSize                            | 1
+   artifactory.replication.local.iteration.sleepThresholdMillis          | 1000
+   artifactory.replication.local.iteration.sleepMillis                   | 100
+   artifactory.replication.event.queue.size                              | 50000
+   artifactory.request.explodedArchiveExtensions                         | zip,tar,tar.gz,tgz
+   artifactory.bintray.jcenter.url                                       | http
+                                                                         | //jcenter.bintray.com
+   artifactory.bintray.url                                               | https
+                                                                         | //bintray.com
+   artifactory.bintray.api.url                                           | https
+                                                                         | //api.bintray.com
+   artifactory.bintray.ui.hideUploads                                    | false
+   artifactory.bintray.ui.hideInfo                                       | false
+   artifactory.bintray.ui.hideRemoteSearch                               | false
+   artifactory.useUserNameAutoCompleteOnLogin                            | on
+   artifactory.ui.hideEncryptedPassword                                  | *****
+   artifactory.stats.flushIntervalSecs                                   | 30
+   artifactory.integrationCleanup.intervalSecs                           | 300
+   artifactory.integrationCleanup.quietPeriodSecs                        | 60
+   artifactory.folderPruning.intervalSecs                                | 300
+   artifactory.folderPruning.quietPeriodSecs                             | 60
+   artifactory.security.authentication.password.salt                     | ****************
+   artifactory.db.idGenerator.fetch.amount                               | 1000
+   artifactory.gems.localIndexTaskIntervalSecs                           | 30
+   artifactory.gems.virtualIndexTaskIntervalSecs                         | 300
+   artifactory.gems.gemsIndexTaskQueueLimit                              | 20000
+   artifactory.gems.gemsAfterRepoInitHack                                | true
+   derby.storage.pageCacheSize                                           | 500
+   artifactory.home                                                      | /vagrant/artifactory-3.0.3
+   derby.module.mgmt.jmx                                                 | org.apache.derby.impl.services.jmxnone.NoManagementService
+   derby.language.logStatementText                                       | false
+   derby.stream.error.logSeverityLevel                                   | 0
+   artifactory.release                                                   | 1376218388685
+
+ Java System Info
+ ========================
+   java.class.version                                                    | 51.0
+   java.home                                                             | /usr/lib/jvm/java-7-openjdk-amd64/jre
+   java.io.tmpdir                                                        | /vagrant/artifactory-3.0.3/tomcat/temp
+   java.runtime.name                                                     | OpenJDK Runtime Environment
+   java.runtime.version                                                  | 1.7.0_25-b30
+   java.specification.name                                               | Java Platform API Specification
+   java.specification.vendor                                             | Oracle Corporation
+   java.specification.version                                            | 1.7
+   java.vendor                                                           | Oracle Corporation
+   java.vendor.url                                                       | http
+                                                                         | //java.oracle.com/
+   java.vendor.url.bug                                                   | http
+                                                                         | //bugreport.sun.com/bugreport/
+   java.version                                                          | 1.7.0_25
+   java.vm.info                                                          | mixed mode
+   java.vm.name                                                          | OpenJDK 64-Bit Server VM
+   java.vm.specification.name                                            | Java Virtual Machine Specification
+   java.vm.specification.vendor                                          | Oracle Corporation
+   java.vm.specification.version                                         | 1.7
+   java.vm.vendor                                                        | Oracle Corporation
+   java.vm.version                                                       | 23.7-b01
+   sun.arch.data.model                                                   | 64
+   sun.boot.library.path                                                 | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64
+   sun.cpu.endian                                                        | little
+   sun.cpu.isalist                                                       | 
+   sun.io.unicode.encoding                                               | UnicodeLittle
+   sun.java.launcher                                                     | SUN_STANDARD
+   sun.jnu.encoding                                                      | ANSI_X3.4-1968
+   sun.management.compiler                                               | HotSpot 64-Bit Tiered Compilers
+   sun.os.patch.level                                                    | unknown
+   JVM Input arguments                                                   | -Djava.util.logging.config.file=/vagrant/artifactory-3.0.3/tomcat/conf/logging.properties
+                                                                         | -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+                                                                         | -Xms512m
+                                                                         | -Xmx2g
+                                                                         | -Xss256k
+                                                                         | -XX
+                                                                         | PermSize=128m
+                                                                         | -XX
+                                                                         | MaxPermSize=128m
+                                                                         | -XX
+                                                                         | +UseG1GC
+                                                                         | -Dartifactory.home=/vagrant/artifactory-3.0.3
+                                                                         | -Dfile.encoding=UTF8
+                                                                         | -Djava.endorsed.dirs=/vagrant/artifactory-3.0.3/tomcat/endorsed
+                                                                         | -Dcatalina.base=/vagrant/artifactory-3.0.3/tomcat
+                                                                         | -Dcatalina.home=/vagrant/artifactory-3.0.3/tomcat
+                                                                         | -Djava.io.tmpdir=/vagrant/artifactory-3.0.3/tomcat/temp
+
+ Java Class Path Info
+ ========================
+   sun.boot.class.path                                                   | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/netx.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/plugin.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar
+                                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/classes
+   java.library.path                                                     | /usr/java/packages/lib/amd64
+                                                                         | /usr/lib/jni
+                                                                         | /lib
+                                                                         | /usr/lib
+   java.endorsed.dirs                                                    | /vagrant/artifactory-3.0.3/tomcat/endorsed
+   java.ext.dirs                                                         | /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext
+                                                                         | /usr/java/packages/lib/ext
+   java.class.path                                                       | /vagrant/artifactory-3.0.3/tomcat/bin/bootstrap.jar
+                                                                         | /vagrant/artifactory-3.0.3/tomcat/bin/tomcat-juli.jar
+
+2013-10-02 14:01:39,706 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.search.InternalSearchService
+2013-10-02 14:01:39,707 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.security.ldap.InternalLdapAuthenticator
+2013-10-02 14:01:39,708 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.security.InternalSecurityService
+2013-10-02 14:01:39,803 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.md.MetadataDefinitionService
+2013-10-02 14:01:39,973 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.index.InternalMavenIndexerService
+2013-10-02 14:01:39,987 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cleanup.InternalIntegrationCleanupService
+2013-10-02 14:01:39,993 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cleanup.InternalArtifactCleanupService
+2013-10-02 14:01:40,031 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.security.interceptor.SecurityConfigurationChangesInterceptors
+2013-10-02 14:01:40,033 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.traffic.InternalTrafficService
+2013-10-02 14:01:40,040 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.build.InternalBuildService
+2013-10-02 14:01:40,042 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.interceptor.StorageAggregationInterceptors
+2013-10-02 14:01:40,045 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cache.expirable.CacheExpiry
+2013-10-02 14:01:40,047 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.backup.InternalBackupService
+2013-10-02 14:01:40,071 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.interceptor.ImportInterceptors
+2013-10-02 14:01:40,074 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.storage.InternalStorageService
+2013-10-02 14:01:40,088 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.repo.cleanup.InternalFolderPruningService
+2013-10-02 14:01:40,093 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:180) - Initializing org.artifactory.engine.InternalDownloadService
+2013-10-02 14:01:40,122 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:339) - Artifactory application context is ready.
+2013-10-02 14:01:40,155 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:220) - 
+###########################################################
+### Artifactory successfully started (72.956 seconds)   ###
+###########################################################
+
+2013-10-02 14:02:31,553 [http-bio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/26/continuous-delivery-training-26.jar' Content-Length: 1375504
+2013-10-02 14:02:32,470 [http-bio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/26/continuous-delivery-training-26.jar.sha1' Content-Length: 40
+2013-10-02 14:02:32,479 [art-exec-5] [INFO ] (o.a.s.a.ArchiveIndexerImpl:128) - Indexing archive: libs-release-local:sourcetalk-tage/continuous-delivery-training/26/continuous-delivery-training-26.jar
+2013-10-02 14:02:32,515 [http-bio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/26/continuous-delivery-training-26.jar.md5' Content-Length: 32
+2013-10-02 14:02:32,542 [http-bio-8081-exec-8] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/26/continuous-delivery-training-26.pom' Content-Length: 6070
+2013-10-02 14:02:32,783 [http-bio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/26/continuous-delivery-training-26.pom.sha1' Content-Length: 40
+2013-10-02 14:02:32,808 [http-bio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/26/continuous-delivery-training-26.pom.md5' Content-Length: 32
+2013-10-02 14:02:33,378 [http-bio-8081-exec-4] [INFO ] (o.a.e.UploadServiceImpl:477) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml' Content-Length: 453
+2013-10-02 14:02:33,558 [http-bio-8081-exec-9] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.sha1' Content-Length: 40
+2013-10-02 14:02:33,568 [http-bio-8081-exec-1] [INFO ] (o.a.e.UploadServiceImpl:297) - Deploy to 'libs-release-local:sourcetalk-tage/continuous-delivery-training/maven-metadata.xml.md5' Content-Length: 32

@@ -1,0 +1,18 @@
+----------------------------------------------------------------
+Wed Oct 02 14:00:41 UTC 2013:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-0141-7978-77f2-00001a63b4c8 
+on database directory /vagrant/artifactory-3.0.3/data/derby  with class loader WebappClassLoader
+  context: /artifactory
+  delegate: false
+  repositories:
+    /WEB-INF/classes/
+----------> Parent Classloader:
+org.apache.catalina.loader.StandardClassLoader@782516dc
+ 
+Loaded from file:/vagrant/artifactory-3.0.3/tomcat/work/Catalina/localhost/artifactory/WEB-INF/lib/derby-10.9.1.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_25-b30
+user.dir=/vagrant
+derby.system.home=null
+derby.stream.error.file=/vagrant/artifactory-3.0.3/logs/derby.log
+Database Class Loader started - derby.database.classpath=''

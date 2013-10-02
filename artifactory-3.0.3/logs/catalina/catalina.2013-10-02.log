@@ -1,0 +1,98 @@
+Oct 02, 2013 11:55:51 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8081"]
+Oct 02, 2013 11:55:51 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8019"]
+Oct 02, 2013 11:55:51 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Oct 02, 2013 11:55:51 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.39
+Oct 02, 2013 11:55:51 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /vagrant/artifactory-3.0.3/tomcat/conf/Catalina/localhost/artifactory.xml
+Oct 02, 2013 11:56:15 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /vagrant/artifactory-3.0.3/tomcat/webapps/ROOT
+Oct 02, 2013 11:56:15 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8081"]
+Oct 02, 2013 11:56:16 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8019"]
+Oct 02, 2013 1:56:07 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8081"]
+Oct 02, 2013 1:56:07 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8019"]
+Oct 02, 2013 1:56:07 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/artifactory] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver40] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.InheritableThreadLocal] (value [java.lang.InheritableThreadLocal@6f7491f8]) and a value of type [org.artifactory.common.ArtifactoryHome] (value [org.artifactory.common.ArtifactoryHome@4e1b69f2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.InheritableThreadLocal] (value [java.lang.InheritableThreadLocal@69c8b6ed]) and a value of type [org.artifactory.spring.ArtifactoryApplicationContext] (value [Artifactory: startup date [Wed Oct 02 11:56:16 UTC 2013]; root of context hierarchy]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@7b13f4ea]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@610e43b0]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@7b13f4ea]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2b5e5979]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@7b13f4ea]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@610e43b0]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@7b13f4ea]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2b5e5979]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@7b13f4ea]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@7b13f4ea]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@576e0a42]) and a value of type [org.springframework.security.core.context.SecurityContextImpl] (value [org.springframework.security.core.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@7861b7dc]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@74b40f23]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.InheritableThreadLocal] (value [java.lang.InheritableThreadLocal@6f7491f8]) and a value of type [org.artifactory.common.ArtifactoryHome] (value [org.artifactory.common.ArtifactoryHome@4e1b69f2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+SEVERE: The web application [/artifactory] created a ThreadLocal with key of type [java.lang.InheritableThreadLocal] (value [java.lang.InheritableThreadLocal@69c8b6ed]) and a value of type [org.artifactory.spring.ArtifactoryApplicationContext] (value [Artifactory: startup date [Wed Oct 02 11:56:16 UTC 2013]; root of context hierarchy]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+Oct 02, 2013 1:56:08 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8081"]
+Oct 02, 2013 1:56:08 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8019"]
+Oct 02, 2013 1:56:08 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8081"]
+Oct 02, 2013 1:56:08 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8019"]
+Oct 02, 2013 2:00:00 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8081"]
+Oct 02, 2013 2:00:00 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8019"]
+Oct 02, 2013 2:00:00 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Oct 02, 2013 2:00:00 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.39
+Oct 02, 2013 2:00:00 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /vagrant/artifactory-3.0.3/tomcat/conf/Catalina/localhost/artifactory.xml
+Oct 02, 2013 2:00:27 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /vagrant/artifactory-3.0.3/tomcat/webapps/ROOT
+Oct 02, 2013 2:00:28 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8081"]
+Oct 02, 2013 2:00:28 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8019"]

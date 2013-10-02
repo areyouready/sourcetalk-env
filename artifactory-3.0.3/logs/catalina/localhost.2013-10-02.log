@@ -1,0 +1,8 @@
+Oct 02, 2013 11:56:12 AM org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+Oct 02, 2013 11:56:12 AM org.apache.catalina.core.ApplicationContext log
+INFO: Using artifactory.home at '/vagrant/artifactory-3.0.3' resolved from: System property
+Oct 02, 2013 2:00:22 PM org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+Oct 02, 2013 2:00:22 PM org.apache.catalina.core.ApplicationContext log
+INFO: Using artifactory.home at '/vagrant/artifactory-3.0.3' resolved from: System property
